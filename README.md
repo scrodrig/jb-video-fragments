@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/896f4805-305a-4143-a1d8-ac2163e31c4b)](https://codebeat.co/projects/github-com-scrodrig-jb-video-fragments-master)
+
 # **jb-video-fragments**
 
 ### Available Scripts
