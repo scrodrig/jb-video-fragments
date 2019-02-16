@@ -2,27 +2,39 @@
 
 exports[`renders an Home component into the App as snapshot 1`] = `
 <div
-  className="App"
+  style={
+    Object {
+      "--mdc-theme-on-primary": "#37474F",
+      "--mdc-theme-on-secondary": "rgba(255, 255, 255, 1)",
+      "--mdc-theme-primary": "#546E7A",
+      "--mdc-theme-secondary": "#E91E63",
+      "--mdc-theme-text-primary-on-background": "#000000",
+    }
+  }
 >
   <div
-    className="Home"
+    className="App"
   >
     <div
-      className="Header"
+      className="Home"
     >
-      <header
-        className="mdc-toolbar"
+      <div
+        className="Header"
       >
-        <div
-          className="mdc-toolbar__row"
+        <header
+          className="mdc-toolbar"
         >
           <div
-            className="mdc-toolbar__title"
+            className="mdc-toolbar__row"
           >
-            Toolbar
+            <div
+              className="mdc-toolbar__title"
+            >
+              Toolbar
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
     </div>
   </div>
 </div>

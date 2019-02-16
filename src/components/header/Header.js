@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '@material/toolbar/dist/mdc.toolbar.css';
-
 import {
   Toolbar,
   ToolbarRow,
