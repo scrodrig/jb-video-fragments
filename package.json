@@ -12,10 +12,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
+    "testUpdate": "jest -u",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   },
   "browserslist": [
     ">0.2%",
@@ -26,8 +32,8 @@
   "devDependencies": {
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-jest": "^24.1.0",
-    "jest": "^24.1.0",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
     "react-test-renderer": "^16.8.2"
   }
 }

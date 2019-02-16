@@ -7,7 +7,23 @@ exports[`renders an Home component into the App as snapshot 1`] = `
   <div
     className="Home"
   >
-    asas
+    <div
+      className="Header"
+    >
+      <header
+        className="mdc-toolbar"
+      >
+        <div
+          className="mdc-toolbar__row"
+        >
+          <div
+            className="mdc-toolbar__title"
+          >
+            Toolbar
+          </div>
+        </div>
+      </header>
+    </div>
   </div>
 </div>
 `;
