@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from '@rmwc/theme';
-import Home from './components/Home/Home';
+import Home from './components/home/Home';
 import colors from './style/colors';
+import 'material-icons/iconfont/material-icons.scss';
 
 class App extends Component {
   render() {
@@ -9,7 +10,7 @@ class App extends Component {
       <ThemeProvider options={{
         primary: colors.primary800,
         secondary: colors.secondary500,
-        onPrimary: colors.primary600,
+        onPrimary: colors.primary400,
         textPrimaryOnBackground: colors.black,
       }}
       >

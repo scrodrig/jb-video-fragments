@@ -9,7 +9,7 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders an Home component into the App as snapshot', () => {
+it('renders an home component into the App as snapshot', () => {
   const TextInputComponent = renderer.create(<App />).toJSON();
   expect(TextInputComponent).toMatchSnapshot();
 });

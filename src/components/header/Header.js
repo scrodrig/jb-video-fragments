@@ -1,20 +1,33 @@
 import React, { Component } from 'react';
-import '@material/toolbar/dist/mdc.toolbar.css';
+import '@material/top-app-bar/dist/mdc.top-app-bar.css';
+import '@rmwc/icon/icon.css';
 import {
-  Toolbar,
-  ToolbarRow,
-  ToolbarTitle,
-} from '@rmwc/toolbar';
+  TopAppBar,
+  TopAppBarRow,
+  TopAppBarSection,
+  TopAppBarNavigationIcon,
+  TopAppBarTitle,
+} from '@rmwc/top-app-bar';
+
+import I18n from '../../i18n';
 
 class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <Toolbar>
-          <ToolbarRow>
-            <ToolbarTitle>Toolbar</ToolbarTitle>
-          </ToolbarRow>
-        </Toolbar>
+        <TopAppBar>
+          <TopAppBarRow>
+            <TopAppBarSection>
+              <TopAppBarNavigationIcon icon="menu" />
+              <TopAppBarTitle>{I18n.t('header')}</TopAppBarTitle>
+            </TopAppBarSection>
+
+            <TopAppBarSection alignEnd>
+              <TopAppBarNavigationIcon icon="favorite" />
+            </TopAppBarSection>
+
+          </TopAppBarRow>
+        </TopAppBar>
       </div>
     );
   }
