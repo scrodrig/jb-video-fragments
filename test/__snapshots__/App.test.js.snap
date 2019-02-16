@@ -4,9 +4,9 @@ exports[`renders an Home component into the App as snapshot 1`] = `
 <div
   style={
     Object {
-      "--mdc-theme-on-primary": "#37474F",
+      "--mdc-theme-on-primary": "#546E7A",
       "--mdc-theme-on-secondary": "rgba(255, 255, 255, 1)",
-      "--mdc-theme-primary": "#546E7A",
+      "--mdc-theme-primary": "#37474F",
       "--mdc-theme-secondary": "#E91E63",
       "--mdc-theme-text-primary-on-background": "#000000",
     }

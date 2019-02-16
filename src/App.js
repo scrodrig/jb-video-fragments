@@ -7,15 +7,13 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider options={{
-        primary: colors.primary600,
+        primary: colors.primary800,
         secondary: colors.secondary500,
-        onPrimary: colors.primary800,
+        onPrimary: colors.primary600,
         textPrimaryOnBackground: colors.black,
       }}
       >
-        <div className="App">
-          <Home />
-        </div>
+        <Home />
       </ThemeProvider>
     );
   }
