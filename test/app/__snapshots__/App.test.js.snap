@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an home component into the App as snapshot 1`] = `
+<div
+  style={
+    Object {
+      "--mdc-theme-on-primary": "#78909C",
+      "--mdc-theme-on-secondary": "rgba(255, 255, 255, 1)",
+      "--mdc-theme-primary": "#37474F",
+      "--mdc-theme-secondary": "#E91E63",
+      "--mdc-theme-text-primary-on-background": "#000000",
+    }
+  }
+>
+  <div
+    className="Home"
+  >
+    <div
+      className="Header"
+    >
+      <div
+        className="Menu"
+      >
+        <div
+          className="AppBar"
+        >
+          <header
+            className="mdc-top-app-bar"
+            style={Object {}}
+          >
+            <div
+              className="mdc-top-app-bar__row"
+            >
+              <section
+                className="mdc-top-app-bar__section"
+              >
+                <i
+                  className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
+                  data-mdc-ripple-is-unbounded={true}
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                >
+                  menu
+                </i>
+                <div
+                  className="mdc-top-app-bar__title"
+                >
+                  JB Video Fragments Tube
+                </div>
+              </section>
+              <section
+                className="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+              >
+                <i
+                  className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
+                  data-mdc-ripple-is-unbounded={true}
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                >
+                  favorite
+                </i>
+              </section>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
