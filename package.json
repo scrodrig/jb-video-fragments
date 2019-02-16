@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "jest --watchAll --ci",
     "testCI": "jest --ci",
-    "updateSnapshots": "jest -u",
+    "lint": " ./node_modules/.bin/eslint .",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,6 +34,11 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "23.6.0",
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
     "jest": "23.6.0",
     "react-test-renderer": "^16.8.2"
   }

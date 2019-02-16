@@ -16,7 +16,7 @@ class Header extends Component {
             <ToolbarTitle>Toolbar</ToolbarTitle>
           </ToolbarRow>
         </Toolbar>
-      </div >
+      </div>
     );
   }
 }
