@@ -1,0 +1,10 @@
+.content {
+    padding-top: 60px;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    flex: 1;
+    text-align: center;
+}

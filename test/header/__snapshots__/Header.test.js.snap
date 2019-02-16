@@ -5,64 +5,60 @@ exports[`renders an home component into the Header as snapshot 1`] = `
   className="Header"
 >
   <div
-    className="Menu"
+    className="AppBar"
   >
-    <div
-      className="AppBar"
+    <header
+      className="mdc-top-app-bar"
+      style={Object {}}
     >
-      <header
-        className="mdc-top-app-bar"
-        style={Object {}}
+      <div
+        className="mdc-top-app-bar__row"
       >
-        <div
-          className="mdc-top-app-bar__row"
+        <section
+          className="mdc-top-app-bar__section"
         >
-          <section
-            className="mdc-top-app-bar__section"
+          <i
+            className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
+            data-mdc-ripple-is-unbounded={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            style={Object {}}
           >
-            <i
-              className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
-              data-mdc-ripple-is-unbounded={true}
-              onBlur={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchStart={[Function]}
-              style={Object {}}
-            >
-              menu
-            </i>
-            <div
-              className="mdc-top-app-bar__title"
-            >
-              JB Video Fragments Tube
-            </div>
-          </section>
-          <section
-            className="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+            menu
+          </i>
+          <div
+            className="mdc-top-app-bar__title"
           >
-            <i
-              className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
-              data-mdc-ripple-is-unbounded={true}
-              onBlur={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchStart={[Function]}
-              style={Object {}}
-            >
-              favorite
-            </i>
-          </section>
-        </div>
-      </header>
-    </div>
+            Video Fragments Tube
+          </div>
+        </section>
+        <section
+          className="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+        >
+          <i
+            className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
+            data-mdc-ripple-is-unbounded={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            style={Object {}}
+          >
+            favorite
+          </i>
+        </section>
+      </div>
+    </header>
   </div>
 </div>
 `;

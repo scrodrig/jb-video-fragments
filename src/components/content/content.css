@@ -1,0 +1,8 @@
+.content {
+    display: flex;
+    flex: 1;
+    background-color: chartreuse;
+    align-items: center;
+    height: 980px;
+    justify-content: center;
+}

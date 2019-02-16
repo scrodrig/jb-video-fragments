@@ -32,7 +32,7 @@ exports[`renders an home component into the AppBar as snapshot 1`] = `
         <div
           className="mdc-top-app-bar__title"
         >
-          JB Video Fragments Tube
+          Video Fragments Tube
         </div>
       </section>
       <section

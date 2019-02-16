@@ -13,70 +13,222 @@ exports[`renders an home component into the App as snapshot 1`] = `
   }
 >
   <div
-    className="Home"
+    className="home"
   >
     <div
       className="Header"
     >
       <div
-        className="Menu"
+        className="AppBar"
+      >
+        <header
+          className="mdc-top-app-bar"
+          style={Object {}}
+        >
+          <div
+            className="mdc-top-app-bar__row"
+          >
+            <section
+              className="mdc-top-app-bar__section"
+            >
+              <i
+                className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
+                data-mdc-ripple-is-unbounded={true}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+                style={Object {}}
+              >
+                menu
+              </i>
+              <div
+                className="mdc-top-app-bar__title"
+              >
+                Video Fragments Tube
+              </div>
+            </section>
+            <section
+              className="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+            >
+              <i
+                className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
+                data-mdc-ripple-is-unbounded={true}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+                style={Object {}}
+              >
+                favorite
+              </i>
+            </section>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="menu"
       >
         <div
-          className="AppBar"
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
         >
-          <header
-            className="mdc-top-app-bar"
-            style={Object {}}
+          <aside
+            className="mdc-drawer"
           >
             <div
-              className="mdc-top-app-bar__row"
+              className="mdc-drawer__header"
             >
-              <section
-                className="mdc-top-app-bar__section"
+              <div
+                className="mdc-drawer__title"
               >
-                <i
-                  className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
-                  data-mdc-ripple-is-unbounded={true}
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchStart={[Function]}
-                  style={Object {}}
-                >
-                  menu
-                </i>
-                <div
-                  className="mdc-top-app-bar__title"
-                >
-                  JB Video Fragments Tube
-                </div>
-              </section>
-              <section
-                className="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+                DrawerHeader
+              </div>
+              <div
+                className="mdc-drawer__subtitle"
               >
-                <i
-                  className="rmwc-icon material-icons mdc-top-app-bar__navigation-icon"
-                  data-mdc-ripple-is-unbounded={true}
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchStart={[Function]}
-                  style={Object {}}
-                >
-                  favorite
-                </i>
-              </section>
+                Subtitle
+              </div>
             </div>
-          </header>
+            <div
+              className="mdc-drawer__content"
+            >
+              <div
+                className="mdc-list"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className="mdc-list-item"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                  tabIndex={0}
+                >
+                  Cookies
+                </div>
+                <div
+                  className="mdc-list-item"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                  tabIndex={0}
+                >
+                  Pizza
+                </div>
+                <div
+                  className="mdc-list-item"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                  tabIndex={0}
+                >
+                  Icecream
+                </div>
+                <div
+                  className="mdc-list-item"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                  tabIndex={0}
+                >
+                  Icecream
+                </div>
+                <div
+                  className="mdc-list-item"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                  tabIndex={0}
+                >
+                  Icecream
+                </div>
+                <div
+                  className="mdc-list-item"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                  tabIndex={0}
+                >
+                  Icecream
+                </div>
+                <div
+                  className="mdc-list-item"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
+                  tabIndex={0}
+                >
+                  Icecream
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
+      </div>
+      <div
+        className="content"
+      >
+        asdasd
       </div>
     </div>
   </div>
