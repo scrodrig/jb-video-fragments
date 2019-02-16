@@ -11,8 +11,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
-    "testUpdate": "jest -u",
+    "test": "jest --watchAll --ci",
+    "testCI": "jest --ci",
+    "updateSnapshots": "jest -u",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
