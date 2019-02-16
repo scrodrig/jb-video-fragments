@@ -1,5 +1,6 @@
 [![codebeat badge](https://codebeat.co/badges/896f4805-305a-4143-a1d8-ac2163e31c4b)](https://codebeat.co/projects/github-com-scrodrig-jb-video-fragments-master)
-
+[![Build Status](https://travis-ci.org/scrodrig/jb-video-fragments.svg?branch=master)](https://travis-ci.org/scrodrig/jb-video-fragments)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.1.0&x2=0)]
 # **jb-video-fragments**
 
 ### Available Scripts
