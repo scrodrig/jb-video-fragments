@@ -22,7 +22,11 @@ class Clip extends Component {
     return (
       <div className="clip">
         <Card style={{ width: '20rem' }}>
-          <CardPrimaryAction onClick={() => { onClick(clip); }}>
+          <CardPrimaryAction
+            onClick={() => {
+              onClick(clip);
+            }}
+          >
             <CardMedia
               style={{
                 backgroundImage:
@@ -44,8 +48,27 @@ class Clip extends Component {
           </CardPrimaryAction>
           <CardActions>
             <CardActionIcons>
-              <CardActionIcon icon="edit" style={{ color: colors.blue700 }} onClick={() => { onEdit(clip); }} />
-              <CardActionIcon icon="remove" style={{ color: colors.secondary300 }} />
+              <CardActionIcon
+                icon="edit"
+                style={{
+                  color: clip.type === 'full'
+                    ? colors.primary100
+                    : colors.blue700,
+                }}
+                onClick={() => {
+                  onEdit(clip);
+                }}
+                disabled={clip.type === 'full'}
+              />
+              <CardActionIcon
+                icon="remove"
+                style={{
+                  color: clip.type === 'full'
+                    ? colors.primary100
+                    : colors.secondary300,
+                }}
+                disabled={clip.type === 'full'}
+              />
             </CardActionIcons>
           </CardActions>
         </Card>
@@ -62,8 +85,10 @@ Clip.propTypes = {
 
 Clip.defaultProps = {
   clip: null,
-  onClick: () => {},
-  onEdit: () => {},
+  onClick: () => {
+  },
+  onEdit: () => {
+  },
 };
 
 export default Clip;

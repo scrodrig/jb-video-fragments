@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
-import { size, cloneDeep } from 'lodash';
+import { size, cloneDeep, head } from 'lodash';
 import PropTypes from 'prop-types';
 import MyContext from './MyContext';
 
 const fullVideoClip = {
   id: 1,
   name: 'Full Video',
+  type: 'full',
   start: 0,
   end: 52,
 };
@@ -23,14 +24,23 @@ class GlobalProvider extends Component {
         {
           id: 2,
           name: 'First part',
+          type: 'fragment',
           start: 0,
           end: 10,
         },
         {
           id: 3,
           name: 'Second part',
+          type: 'fragment',
           start: 22,
           end: 35,
+        },
+        {
+          id: 4,
+          name: 'Third part',
+          type: 'fragment',
+          start: 36,
+          end: 52,
         },
       ],
       updateClip: clip => this.updateClip(clip),
@@ -41,7 +51,6 @@ class GlobalProvider extends Component {
 
   addClip(editingClip) {
     const { clips } = this.state;
-    this.updateClip(fullVideoClip);
     if (editingClip.id === 0) {
       this.addClipQueue(clips, editingClip);
     } else {
@@ -58,8 +67,10 @@ class GlobalProvider extends Component {
   addClipQueue(clips, editingClip) {
     const clip = cloneDeep(editingClip);
     clip.id = size(clips) + 1;
+    clip.type = 'fragment';
     clips.push(clip);
     this.setState({ clips }, () => {
+      this.updateClip(head(clips));
     });
   }
 
