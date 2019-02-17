@@ -6,11 +6,19 @@ import withContext from '../../context/WithContext';
 import Clip from './Clip';
 import '@material/button/dist/mdc.button.css';
 import I18n from '../../i18n';
+import ClipDialog from '../dialog/ClipDialog';
+
+const emptyClip = {
+  id: 0,
+  name: '',
+  start: 0,
+  end: 0,
+};
 
 class ClipList extends Component {
   renderVideoClips() {
     const { context } = this.props;
-    const { clips, updateClip } = context;
+    const { clips, updateClip, updateEditingClip } = context;
     return (
       <div>
         {clips.map((clip, index) => (
@@ -18,6 +26,7 @@ class ClipList extends Component {
             key={`clip${index}`}
             clip={clip}
             onClick={updateClip}
+            onEdit={updateEditingClip}
           />
         ))}
       </div>
@@ -25,15 +34,25 @@ class ClipList extends Component {
   }
 
   render() {
+    const { context } = this.props;
+    const { editingClip, updateEditingClip } = context;
     return (
       <div>
         <div className="add-button">
-          <Button raised>
-            <ButtonIcon icon="add" />
+          <Button
+            raised
+            onClick={() => {
+              updateEditingClip(emptyClip);
+            }}
+          >
+            <ButtonIcon
+              icon="add"
+            />
             {I18n.t('clip.add')}
           </Button>
         </div>
         {this.renderVideoClips()}
+        {editingClip !== null ? <ClipDialog /> : null}
       </div>
     );
   }

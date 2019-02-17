@@ -5,6 +5,7 @@
   "dependencies": {
     "get-user-locale": "^1.1.1",
     "i18n-js": "^3.2.1",
+    "lodash": "^4.17.11",
     "material-icons": "^0.3.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",

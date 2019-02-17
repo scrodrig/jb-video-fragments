@@ -18,7 +18,7 @@ import colors from '../../style/colors';
 
 class Clip extends Component {
   render() {
-    const { clip, onClick } = this.props;
+    const { clip, onClick, onEdit } = this.props;
     return (
       <div className="clip">
         <Card style={{ width: '20rem' }}>
@@ -44,7 +44,7 @@ class Clip extends Component {
           </CardPrimaryAction>
           <CardActions>
             <CardActionIcons>
-              <CardActionIcon icon="edit" style={{ color: colors.blue700 }} />
+              <CardActionIcon icon="edit" style={{ color: colors.blue700 }} onClick={() => { onEdit(clip); }} />
               <CardActionIcon icon="remove" style={{ color: colors.secondary300 }} />
             </CardActionIcons>
           </CardActions>
@@ -57,11 +57,13 @@ class Clip extends Component {
 Clip.propTypes = {
   clip: PropTypes.object,
   onClick: PropTypes.func,
+  onEdit: PropTypes.func,
 };
 
 Clip.defaultProps = {
   clip: null,
   onClick: () => {},
+  onEdit: () => {},
 };
 
 export default Clip;
