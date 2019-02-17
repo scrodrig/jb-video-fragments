@@ -7,11 +7,11 @@ import Clip from './Clip';
 class ClipList extends Component {
   render() {
     const { context } = this.props;
-    const { clips } = context;
+    const { clips, updateClip } = context;
     return (
       <div className="clipList">
         {clips.map((clip, index) => (
-          <Clip key={`clip${index}`} clip={clip} />
+          <Clip key={`clip${index}`} clip={clip} onClick={updateClip} />
         ))}
       </div>
     );

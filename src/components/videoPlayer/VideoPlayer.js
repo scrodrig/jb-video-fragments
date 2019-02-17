@@ -5,14 +5,14 @@ import withContext from '../../context/WithContext';
 class VideoPlayer extends Component {
   render() {
     const { context } = this.props;
-    const { title } = context;
+    const { clip } = context;
     return (
       <div className="videoPlayer">
-        <h3>{title}</h3>
+        <h3>{clip.name}</h3>
         <video
-          src="/videos/video.mp4"
+          src={`/videos/video.mp4#t=${clip.start},${clip.end}`}
           controls
-          // autoPlay
+          autoPlay
         >
           <track default kind="captions" />
         </video>

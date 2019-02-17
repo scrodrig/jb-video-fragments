@@ -8,6 +8,11 @@ class GlobalProvider extends Component {
     super(props);
     this.state = {
       title: 'Hello',
+      clip: {
+        name: 'Full Video',
+        start: 0,
+        end: 52,
+      },
       clips: [
         {
           name: 'Full Video',
@@ -34,19 +39,14 @@ class GlobalProvider extends Component {
           start: 31,
           end: 40,
         },
-        {
-          name: 'Fifth part',
-          start: 41,
-          end: 52,
-        },
       ],
-      // updateUser: user => this.updateUser(user),
+      updateClip: user => this.updateClip(user),
     };
   }
 
-  // updateUser(user: User) {
-  //   this.setState({ user }, () => {});
-  // }
+  updateClip(clip) {
+    this.setState({ clip }, () => {});
+  }
 
   render() {
     const { children } = this.props;

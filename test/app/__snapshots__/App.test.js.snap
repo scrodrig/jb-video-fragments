@@ -217,11 +217,12 @@ exports[`renders an home component into the App as snapshot 1`] = `
           className="videoPlayer"
         >
           <h3>
-            Hello
+            Full Video
           </h3>
           <video
+            autoPlay={true}
             controls={true}
-            src="/videos/video.mp4"
+            src="/videos/video.mp4#t=0,52"
           >
             <track
               default={true}
@@ -250,6 +251,7 @@ exports[`renders an home component into the App as snapshot 1`] = `
               <div
                 className="mdc-card__primary-action"
                 onBlur={[Function]}
+                onClick={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
@@ -302,6 +304,7 @@ exports[`renders an home component into the App as snapshot 1`] = `
               <div
                 className="mdc-card__primary-action"
                 onBlur={[Function]}
+                onClick={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
@@ -354,6 +357,7 @@ exports[`renders an home component into the App as snapshot 1`] = `
               <div
                 className="mdc-card__primary-action"
                 onBlur={[Function]}
+                onClick={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
@@ -406,6 +410,7 @@ exports[`renders an home component into the App as snapshot 1`] = `
               <div
                 className="mdc-card__primary-action"
                 onBlur={[Function]}
+                onClick={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
@@ -458,6 +463,7 @@ exports[`renders an home component into the App as snapshot 1`] = `
               <div
                 className="mdc-card__primary-action"
                 onBlur={[Function]}
+                onClick={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
@@ -490,58 +496,6 @@ exports[`renders an home component into the App as snapshot 1`] = `
                       className="end ellipsis"
                     >
                       End: 0:40
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-          <div
-            className="clip"
-          >
-            <div
-              className="mdc-card"
-              style={
-                Object {
-                  "width": "15rem",
-                }
-              }
-            >
-              <div
-                className="mdc-card__primary-action"
-                onBlur={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchStart={[Function]}
-                style={Object {}}
-              >
-                <section
-                  className="mdc-card__media"
-                  style={
-                    Object {
-                      "backgroundImage": "url(/images/asche.jpg)",
-                    }
-                  }
-                >
-                  <div>
-                    <p
-                      className="name ellipsis"
-                    >
-                      Fifth part
-                    </p>
-                    <div
-                      className="start ellipsis"
-                    >
-                      Start: 0:41
-                    </div>
-                    <div
-                      className="end ellipsis"
-                    >
-                      End: 0:52
                     </div>
                   </div>
                 </section>

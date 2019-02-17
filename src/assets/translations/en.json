@@ -6,5 +6,10 @@
     "favorites": "Favorites",
     "search": "Search",
     "account": "Account"
+  },
+  "clip": {
+    "name": "Name",
+    "start": "Start",
+    "end": "End"
   }
 }

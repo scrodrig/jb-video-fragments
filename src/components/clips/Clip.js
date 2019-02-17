@@ -10,14 +10,15 @@ import '@material/button/dist/mdc.button.css';
 import '@material/icon-button/dist/mdc.icon-button.css';
 import PropTypes from 'prop-types';
 import timeUtils from '../../utils/timeUtils';
+import I18n from '../../i18n';
 
 class Clip extends Component {
   render() {
-    const { clip } = this.props;
+    const { clip, onClick } = this.props;
     return (
       <div className="clip">
         <Card style={{ width: '15rem' }}>
-          <CardPrimaryAction>
+          <CardPrimaryAction onClick={() => { onClick(clip); }}>
             <CardMedia
               style={{
                 backgroundImage:
@@ -29,10 +30,10 @@ class Clip extends Component {
                   {clip.name}
                 </p>
                 <div className="start ellipsis">
-                  {`Start: ${timeUtils.formatSecondsToMSS(clip.start)}`}
+                  {`${I18n.t('clip.start')}: ${timeUtils.formatSecondsToMSS(clip.start)}`}
                 </div>
                 <div className="end ellipsis">
-                  {`End: ${timeUtils.formatSecondsToMSS(clip.end)}`}
+                  {`${I18n.t('clip.end')}: ${timeUtils.formatSecondsToMSS(clip.end)}`}
                 </div>
               </div>
             </CardMedia>
@@ -45,10 +46,12 @@ class Clip extends Component {
 
 Clip.propTypes = {
   clip: PropTypes.object,
+  onClick: PropTypes.func,
 };
 
 Clip.defaultProps = {
   clip: null,
+  onClick: () => {},
 };
 
 export default Clip;
