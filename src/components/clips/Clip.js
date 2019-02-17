@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import React, { Component } from 'react';
 import {
   Card,
@@ -7,6 +8,7 @@ import {
   CardActionIcons,
   CardActionIcon,
 } from '@rmwc/card';
+import { sample } from 'lodash';
 import './clip.css';
 import '@material/card/dist/mdc.card.css';
 import '@material/button/dist/mdc.button.css';
@@ -17,12 +19,24 @@ import I18n from '../../i18n';
 import colors from '../../style/colors';
 import ConfirmationModal from '../dialog/ConfirmationModal';
 
+const thumbnail1 = '/images/thumbnails/coimbra.jpg';
+const thumbnail2 = '/images/thumbnails/leiria.jpg';
+const thumbnail3 = '/images/thumbnails/oporto.jpg';
+const thumbnail4 = '/images/thumbnails/peniche.jpg';
+const thumbnail5 = '/images/thumbnails/sintra.jpg';
+
 class Clip extends Component {
   constructor(props) {
     super(props);
     this.state = {
       openModal: false,
+      thumbnails: [thumbnail1, thumbnail2, thumbnail3, thumbnail4, thumbnail5],
     };
+  }
+
+  assignThumbnail(clip) {
+    const { thumbnails } = this.state;
+    clip.thumbnail = clip.thumbnail || sample(thumbnails);
   }
 
   render() {
@@ -33,6 +47,7 @@ class Clip extends Component {
       onDelete,
     } = this.props;
     const { openModal } = this.state;
+    this.assignThumbnail(clip);
     return (
       <div className="clip">
         <Card style={{ width: '20rem' }}>
@@ -41,12 +56,7 @@ class Clip extends Component {
               onClick(clip);
             }}
           >
-            <CardMedia
-              style={{
-                backgroundImage:
-                  'url(/images/asche.jpg)',
-              }}
-            >
+            <CardMedia style={{ backgroundImage: `url(${clip.thumbnail})` }}>
               <div>
                 <p className="name ellipsis">
                   {clip.name}

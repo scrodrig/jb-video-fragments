@@ -5,3 +5,14 @@
     min-height: 800px;
     justify-content: center;
 }
+
+.videoPlayer {
+    display: flex;
+    flex: 0.95;
+    flex-direction: column;
+}
+
+.titleVideo {
+    color: #455A64;
+    padding-bottom: 40px;
+}

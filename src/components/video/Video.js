@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Typography } from '@rmwc/typography';
 import withContext from '../../context/WithContext';
+import '@material/typography/dist/mdc.typography.css';
+import './videoPlayer.css';
 
 class Video extends Component {
   render() {
@@ -8,7 +11,7 @@ class Video extends Component {
     const { playingClip } = context;
     return (
       <div className="videoPlayer">
-        <h3>{playingClip.name}</h3>
+        <Typography use="headline1" className="titleVideo">{playingClip.name}</Typography>
         <video
           src={`/videos/video.mp4#t=${playingClip.start},${playingClip.end}`}
           controls

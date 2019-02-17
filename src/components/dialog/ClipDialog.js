@@ -18,6 +18,7 @@ import '@material/floating-label/dist/mdc.floating-label.css';
 import '@material/notched-outline/dist/mdc.notched-outline.css';
 import '@material/line-ripple/dist/mdc.line-ripple.css';
 import I18n from '../../i18n';
+import colors from '../../style/colors';
 
 class ClipDialog extends Component {
   constructor(props) {
@@ -110,6 +111,9 @@ class ClipDialog extends Component {
           </DialogButton>
           <DialogButton
             action="accept"
+            style={{
+              color: colors.blue700,
+            }}
             isDefaultAction
             disabled={start >= end || isEmpty(name)}
           >

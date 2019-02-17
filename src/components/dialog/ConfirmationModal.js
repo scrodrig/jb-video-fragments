@@ -10,6 +10,7 @@ import '@material/dialog/dist/mdc.dialog.css';
 import '@material/button/dist/mdc.button.css';
 import PropTypes from 'prop-types';
 import I18n from '../../i18n';
+import colors from '../../style/colors';
 
 class ConfirmationModal extends Component {
   render() {
@@ -40,6 +41,9 @@ class ConfirmationModal extends Component {
             <DialogButton
               action="accept"
               isDefaultAction
+              style={{
+                color: colors.secondary400,
+              }}
             >
               {I18n.t('edit.clip.confirm')}
             </DialogButton>
