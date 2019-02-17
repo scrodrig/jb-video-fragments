@@ -4,6 +4,6 @@ exports[`renders an home component into the Panel as snapshot 1`] = `
 <div
   className="panel border-panel"
 >
-  asdas
+  <ClipList />
 </div>
 `;

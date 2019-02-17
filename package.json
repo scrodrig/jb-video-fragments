@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --watchAll --ci",
+    "test": "jest --watchAll",
     "testCI": "jest --ci",
     "lint": " ./node_modules/.bin/eslint .",
     "eject": "react-scripts eject"

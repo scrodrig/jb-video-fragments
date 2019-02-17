@@ -207,7 +207,7 @@ exports[`renders an home component into the Home as snapshot 1`] = `
     <div
       className="panel border-panel"
     >
-      asdas
+      <ClipList />
     </div>
   </div>
 </div>

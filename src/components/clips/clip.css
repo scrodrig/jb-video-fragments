@@ -1,0 +1,27 @@
+.name{
+    font-family: "Arial Black";
+    color: white;
+    text-align: center;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.start{
+    font-family: "Arial";
+    color: white;
+    text-overflow: 'ellipsis',
+}
+
+.end{
+    font-family: "Arial";
+    color: white;
+    text-overflow: 'ellipsis',
+}
+
+.clip{
+    padding: 5px;
+}

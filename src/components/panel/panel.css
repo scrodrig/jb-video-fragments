@@ -1,9 +1,10 @@
 .panel {
     display: flex;
     height: 100%;
+    padding-top: 3%;
     flex: 0.2;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .border-panel {

@@ -11,6 +11,33 @@ class GlobalProvider extends Component {
       clips: [
         {
           name: 'Full Video',
+          start: 0,
+          end: 52,
+        },
+        {
+          name: 'First part',
+          start: 0,
+          end: 10,
+        },
+        {
+          name: 'Second part',
+          start: 11,
+          end: 20,
+        },
+        {
+          name: 'Third part',
+          start: 21,
+          end: 30,
+        },
+        {
+          name: 'Forth part',
+          start: 31,
+          end: 40,
+        },
+        {
+          name: 'Fifth part',
+          start: 41,
+          end: 52,
         },
       ],
       // updateUser: user => this.updateUser(user),
