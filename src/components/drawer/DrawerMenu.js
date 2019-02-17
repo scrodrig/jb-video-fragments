@@ -18,37 +18,49 @@ import './drawerMenu.css';
 import colors from '../../style/colors';
 import I18n from '../../i18n';
 
+const iconStyle = { color: colors.secondary300, paddingRight: 10 };
 class DrawerMenu extends Component {
+  static getDrawerHeader() {
+    return (
+      <DrawerHeader>
+        <DrawerTitle>{I18n.t('drawer.header')}</DrawerTitle>
+        <DrawerSubtitle>{I18n.t('drawer.subtitle')}</DrawerSubtitle>
+      </DrawerHeader>
+    );
+  }
+
+
+  static getList() {
+    return (
+      <List>
+        {DrawerMenu.getListItem('favorite', I18n.t('drawer.favorites'))}
+        {DrawerMenu.getListItem('search', I18n.t('drawer.search'))}
+        {DrawerMenu.getListItem('lock', I18n.t('drawer.account'))}
+      </List>
+    );
+  }
+
+  static getListItem(icon, text) {
+    return (
+      <ListItem>
+        <div className="item">
+          <Icon
+            icon={icon}
+            style={iconStyle}
+          />
+          <h4>{text}</h4>
+        </div>
+      </ListItem>
+    );
+  }
+
   render() {
-    const iconStyle = { color: colors.secondary300, paddingRight: 10 };
     return (
       <div>
         <Drawer>
-          <DrawerHeader>
-            <DrawerTitle>{I18n.t('drawer.header')}</DrawerTitle>
-            <DrawerSubtitle>{I18n.t('drawer.subtitle')}</DrawerSubtitle>
-          </DrawerHeader>
+          {DrawerMenu.getDrawerHeader()}
           <DrawerContent>
-            <List>
-              <ListItem>
-                <div className="item">
-                  <Icon icon="favorite" style={iconStyle} />
-                  <h4>{I18n.t('drawer.favorites')}</h4>
-                </div>
-              </ListItem>
-              <ListItem>
-                <div className="item">
-                  <Icon icon="search" style={iconStyle} />
-                  <h4>{I18n.t('drawer.search')}</h4>
-                </div>
-              </ListItem>
-              <ListItem>
-                <div className="item">
-                  <Icon icon="lock" style={iconStyle} />
-                  <h4>{I18n.t('drawer.account')}</h4>
-                </div>
-              </ListItem>
-            </List>
+            {DrawerMenu.getList(iconStyle)}
           </DrawerContent>
         </Drawer>
       </div>
