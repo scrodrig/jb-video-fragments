@@ -1,8 +1,11 @@
-.content {
+.item {
     display: flex;
     flex: 1;
-    background-color: chartreuse;
+    height: 100%;
     align-items: center;
-    min-height: 800px;
     justify-content: center;
+}
+
+.item:hover {
+    background-color: #F48FB1;
 }

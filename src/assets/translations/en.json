@@ -1,3 +1,10 @@
 {
-  "header": "Video Fragments Tube"
+  "header": "Video Fragments Tube",
+  "drawer": {
+    "header": "Anonymous User!!",
+    "subtitle": "Welcome!!",
+    "favorites": "Favorites",
+    "search": "Search",
+    "account": "Account"
+  }
 }
