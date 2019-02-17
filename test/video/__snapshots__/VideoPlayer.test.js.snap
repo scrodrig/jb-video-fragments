@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an home component into the VideoPlayer as snapshot 1`] = `
+<div
+  className="videoPlayer"
+>
+  <video
+    controls={true}
+    src="/videos/video.mp4"
+  >
+    <track
+      default={true}
+      kind="captions"
+    />
+  </video>
+</div>
+`;

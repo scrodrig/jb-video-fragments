@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './content.css';
+import VideoPlayer from '../videoPlayer/VideoPlayer';
 
 class Content extends Component {
   render() {
     return (
       <div className="content">
-        asdasd
+        <VideoPlayer />
       </div>
     );
   }
