@@ -61,6 +61,7 @@ class GlobalProvider extends Component {
   updateClipQueue(clips, editingClip) {
     const restult = clips.map(obj => [editingClip].find(o => o.id === obj.id) || obj);
     this.setState({ clips: restult }, () => {
+      this.updateClip(head(clips));
     });
   }
 

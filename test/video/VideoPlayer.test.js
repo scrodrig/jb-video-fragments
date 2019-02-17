@@ -1,12 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import VideoPlayer from '../../src/components/videoPlayer/VideoPlayer';
-import context from '../../__mocks__/GlobalProvider';
+import VideoPlayer from '../../src/components/video/VideoPlayer';
 
+jest.mock('../../src/components/video/Video', () => 'Video');
 
-it.skip('renders an home component into the VideoPlayer as snapshot', () => {
-  jest.mock('../../src/context/WithContext', () => 'withContext');
-
-  const TextInputComponent = renderer.create(<VideoPlayer context={{ context }} />).toJSON();
+it('renders an home component into the Content as snapshot', () => {
+  const TextInputComponent = renderer.create(<VideoPlayer />).toJSON();
   expect(TextInputComponent).toMatchSnapshot();
 });

@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import Clip from '../../src/components/clips/Clip';
 
-jest.mock('../../src/components/videoPlayer/VideoPlayer', () => 'VideoPlayer');
+jest.mock('../../src/components/video/Video', () => 'Video');
 
 it('renders an clip component into the Clip as snapshot', () => {
   const clip = {

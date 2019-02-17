@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import withContext from '../../context/WithContext';
 
-class VideoPlayer extends Component {
+class Video extends Component {
   render() {
     const { context } = this.props;
     const { playingClip } = context;
@@ -21,12 +21,12 @@ class VideoPlayer extends Component {
   }
 }
 
-VideoPlayer.propTypes = {
+Video.propTypes = {
   context: PropTypes.object,
 };
 
-VideoPlayer.defaultProps = {
+Video.defaultProps = {
   context: null,
 };
 
-export default withContext(VideoPlayer);
+export default withContext(Video);

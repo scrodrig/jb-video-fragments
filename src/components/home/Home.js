@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../header/Header';
-import Content from '../content/Content';
+import VideoPlayer from '../video/VideoPlayer';
 import Menu from '../menu/Menu';
 import './home.css';
 import Panel from '../panel/Panel';
@@ -12,7 +12,7 @@ class Home extends Component {
         <Header />
         <div className="content">
           <Menu />
-          <Content />
+          <VideoPlayer />
           <Panel />
         </div>
       </div>
