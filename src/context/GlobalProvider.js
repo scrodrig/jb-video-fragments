@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
-import { size, cloneDeep, head } from 'lodash';
+import {
+  size, cloneDeep, head, remove,
+} from 'lodash';
 import PropTypes from 'prop-types';
 import MyContext from './MyContext';
 
@@ -45,6 +47,7 @@ class GlobalProvider extends Component {
       ],
       updateClip: clip => this.updateClip(clip),
       updateEditingClip: clip => this.updateEditingClip(clip),
+      deleteEditingClip: clip => this.deleteEditingClip(clip),
       addClip: clip => this.addClip(clip),
     };
   }
@@ -59,9 +62,17 @@ class GlobalProvider extends Component {
   }
 
   updateClipQueue(clips, editingClip) {
-    const restult = clips.map(obj => [editingClip].find(o => o.id === obj.id) || obj);
-    this.setState({ clips: restult }, () => {
+    const result = clips.map(obj => [editingClip].find(o => o.id === obj.id) || obj);
+    this.setState({ clips: result }, () => {
       this.updateClip(head(clips));
+    });
+  }
+
+  deleteEditingClip(removingClip) {
+    const { clips } = this.state;
+    const result = remove(clips, clip => clip.id !== removingClip.id);
+    this.setState({ clips: result }, () => {
+      this.updateClip(head(result));
     });
   }
 

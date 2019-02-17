@@ -16,6 +16,7 @@
   "edit":{
     "clip":{
       "title":"Create a clip",
+      "deleteTitle":"Delete a clip",
       "name":"Clip name",
       "nameHelp":"Type the name of the clip",
       "start":"Clip start time",
@@ -23,7 +24,9 @@
       "end":"Clip end time",
       "endHelp":"Type the end of the clip",
       "save":"Save",
-      "cancel":"Cancel"
+      "confirm":"Confirm",
+      "cancel":"Cancel",
+      "confirmationDelete":"Are you sure you want to delete {{clipTitle}} clip?"
     }
   }
 

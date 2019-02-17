@@ -15,10 +15,24 @@ import PropTypes from 'prop-types';
 import timeUtils from '../../utils/timeUtils';
 import I18n from '../../i18n';
 import colors from '../../style/colors';
+import ConfirmationModal from '../dialog/ConfirmationModal';
 
 class Clip extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      openModal: false,
+    };
+  }
+
   render() {
-    const { clip, onClick, onEdit } = this.props;
+    const {
+      clip,
+      onClick,
+      onEdit,
+      onDelete,
+    } = this.props;
+    const { openModal } = this.state;
     return (
       <div className="clip">
         <Card style={{ width: '20rem' }}>
@@ -67,11 +81,30 @@ class Clip extends Component {
                     ? colors.primary100
                     : colors.secondary300,
                 }}
+                onClick={() => {
+                  this.setState({ openModal: true });
+                }}
                 disabled={clip.type === 'full'}
               />
             </CardActionIcons>
           </CardActions>
         </Card>
+
+        {openModal
+          ? (
+            <ConfirmationModal
+              clipTitle={clip.name}
+              openModal={openModal}
+              closeModal={() => {
+                this.setState({ openModal: false });
+              }}
+              accept={() => {
+                onDelete(clip);
+              }}
+            />
+          )
+          : null}
+
       </div>
     );
   }
@@ -81,6 +114,7 @@ Clip.propTypes = {
   clip: PropTypes.object,
   onClick: PropTypes.func,
   onEdit: PropTypes.func,
+  onDelete: PropTypes.func,
 };
 
 Clip.defaultProps = {
@@ -88,6 +122,8 @@ Clip.defaultProps = {
   onClick: () => {
   },
   onEdit: () => {
+  },
+  onDelete: () => {
   },
 };
 

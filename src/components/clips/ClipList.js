@@ -18,7 +18,9 @@ const emptyClip = {
 class ClipList extends Component {
   renderVideoClips() {
     const { context } = this.props;
-    const { clips, updateClip, updateEditingClip } = context;
+    const {
+      clips, updateClip, updateEditingClip, deleteEditingClip,
+    } = context;
     return (
       <div>
         {clips.map((clip, index) => (
@@ -27,6 +29,7 @@ class ClipList extends Component {
             clip={clip}
             onClick={updateClip}
             onEdit={updateEditingClip}
+            onDelete={deleteEditingClip}
           />
         ))}
       </div>
