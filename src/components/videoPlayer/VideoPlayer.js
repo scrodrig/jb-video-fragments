@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import withContext from '../../context/WithContext';
 
 class VideoPlayer extends Component {
@@ -19,5 +20,13 @@ class VideoPlayer extends Component {
     );
   }
 }
+
+VideoPlayer.propTypes = {
+  context: PropTypes.object,
+};
+
+VideoPlayer.defaultProps = {
+  context: null,
+};
 
 export default withContext(VideoPlayer);

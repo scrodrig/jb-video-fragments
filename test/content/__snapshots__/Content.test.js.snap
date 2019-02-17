@@ -4,18 +4,6 @@ exports[`renders an home component into the Content as snapshot 1`] = `
 <div
   className="content"
 >
-  <div
-    className="videoPlayer"
-  >
-    <video
-      controls={true}
-      src="/videos/video.mp4"
-    >
-      <track
-        default={true}
-        kind="captions"
-      />
-    </video>
-  </div>
+  <VideoPlayer />
 </div>
 `;

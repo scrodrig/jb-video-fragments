@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import MyContext from './MyContext';
 
 class GlobalProvider extends Component {
@@ -32,5 +33,9 @@ class GlobalProvider extends Component {
     );
   }
 }
+
+GlobalProvider.propTypes = {
+  children: PropTypes.object.isRequired,
+};
 
 export default GlobalProvider;

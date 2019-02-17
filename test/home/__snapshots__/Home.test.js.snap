@@ -202,19 +202,7 @@ exports[`renders an home component into the Home as snapshot 1`] = `
     <div
       className="content"
     >
-      <div
-        className="videoPlayer"
-      >
-        <video
-          controls={true}
-          src="/videos/video.mp4"
-        >
-          <track
-            default={true}
-            kind="captions"
-          />
-        </video>
-      </div>
+      <VideoPlayer />
     </div>
     <div
       className="panel border-panel"
