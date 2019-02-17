@@ -3,6 +3,7 @@ import { ThemeProvider } from '@rmwc/theme';
 import Home from './components/home/Home';
 import colors from './style/colors';
 import 'material-icons/iconfont/material-icons.scss';
+import GlobalProvider from './context/GlobalProvider';
 
 class App extends Component {
   render() {
@@ -14,7 +15,9 @@ class App extends Component {
         textPrimaryOnBackground: colors.black,
       }}
       >
-        <Home />
+        <GlobalProvider>
+          <Home />
+        </GlobalProvider>
       </ThemeProvider>
     );
   }
