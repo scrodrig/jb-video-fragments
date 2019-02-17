@@ -12,7 +12,7 @@ class VideoPlayer extends Component {
         <video
           src={`/videos/video.mp4#t=${clip.start},${clip.end}`}
           controls
-          autoPlay
+          // autoPlay
         >
           <track default kind="captions" />
         </video>

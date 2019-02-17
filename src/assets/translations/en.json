@@ -9,6 +9,7 @@
   },
   "clip": {
     "name": "Name",
+    "add": "Add",
     "start": "Start",
     "end": "End"
   }

@@ -220,7 +220,6 @@ exports[`renders an home component into the App as snapshot 1`] = `
             Full Video
           </h3>
           <video
-            autoPlay={true}
             controls={true}
             src="/videos/video.mp4#t=0,52"
           >
@@ -234,269 +233,556 @@ exports[`renders an home component into the App as snapshot 1`] = `
       <div
         className="panel border-panel"
       >
-        <div
-          className="clipList"
-        >
+        <div>
           <div
-            className="clip"
+            className="add-button"
           >
+            <button
+              className="mdc-button mdc-button--raised"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+              style={Object {}}
+            >
+              <span
+                className="mdc-button__label"
+              >
+                <i
+                  className="rmwc-icon material-icons mdc-button__icon"
+                >
+                  add
+                </i>
+                Add
+              </span>
+            </button>
+          </div>
+          <div>
             <div
-              className="mdc-card"
-              style={
-                Object {
-                  "width": "15rem",
-                }
-              }
+              className="clip"
             >
               <div
-                className="mdc-card__primary-action"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchStart={[Function]}
-                style={Object {}}
-              >
-                <section
-                  className="mdc-card__media"
-                  style={
-                    Object {
-                      "backgroundImage": "url(/images/asche.jpg)",
-                    }
+                className="mdc-card"
+                style={
+                  Object {
+                    "width": "20rem",
                   }
+                }
+              >
+                <div
+                  className="mdc-card__primary-action"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
                 >
-                  <div>
-                    <p
-                      className="name ellipsis"
-                    >
-                      Full Video
-                    </p>
-                    <div
-                      className="start ellipsis"
-                    >
-                      Start: 0:00
+                  <section
+                    className="mdc-card__media"
+                    style={
+                      Object {
+                        "backgroundImage": "url(/images/asche.jpg)",
+                      }
+                    }
+                  >
+                    <div>
+                      <p
+                        className="name ellipsis"
+                      >
+                        Full Video
+                      </p>
+                      <div
+                        className="start ellipsis"
+                      >
+                        Start: 0:00
+                      </div>
+                      <div
+                        className="end ellipsis"
+                      >
+                        End: 0:52
+                      </div>
                     </div>
-                    <div
-                      className="end ellipsis"
+                  </section>
+                </div>
+                <section
+                  className="mdc-card__actions"
+                >
+                  <div
+                    className="mdc-card__action-icons"
+                  >
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#1976D2",
+                        }
+                      }
+                      tabIndex="0"
                     >
-                      End: 0:52
-                    </div>
+                      edit
+                    </button>
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#F06292",
+                        }
+                      }
+                      tabIndex="0"
+                    >
+                      remove
+                    </button>
                   </div>
                 </section>
               </div>
             </div>
-          </div>
-          <div
-            className="clip"
-          >
             <div
-              className="mdc-card"
-              style={
-                Object {
-                  "width": "15rem",
-                }
-              }
+              className="clip"
             >
               <div
-                className="mdc-card__primary-action"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchStart={[Function]}
-                style={Object {}}
-              >
-                <section
-                  className="mdc-card__media"
-                  style={
-                    Object {
-                      "backgroundImage": "url(/images/asche.jpg)",
-                    }
+                className="mdc-card"
+                style={
+                  Object {
+                    "width": "20rem",
                   }
+                }
+              >
+                <div
+                  className="mdc-card__primary-action"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
                 >
-                  <div>
-                    <p
-                      className="name ellipsis"
-                    >
-                      First part
-                    </p>
-                    <div
-                      className="start ellipsis"
-                    >
-                      Start: 0:00
+                  <section
+                    className="mdc-card__media"
+                    style={
+                      Object {
+                        "backgroundImage": "url(/images/asche.jpg)",
+                      }
+                    }
+                  >
+                    <div>
+                      <p
+                        className="name ellipsis"
+                      >
+                        First part
+                      </p>
+                      <div
+                        className="start ellipsis"
+                      >
+                        Start: 0:00
+                      </div>
+                      <div
+                        className="end ellipsis"
+                      >
+                        End: 0:10
+                      </div>
                     </div>
-                    <div
-                      className="end ellipsis"
+                  </section>
+                </div>
+                <section
+                  className="mdc-card__actions"
+                >
+                  <div
+                    className="mdc-card__action-icons"
+                  >
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#1976D2",
+                        }
+                      }
+                      tabIndex="0"
                     >
-                      End: 0:10
-                    </div>
+                      edit
+                    </button>
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#F06292",
+                        }
+                      }
+                      tabIndex="0"
+                    >
+                      remove
+                    </button>
                   </div>
                 </section>
               </div>
             </div>
-          </div>
-          <div
-            className="clip"
-          >
             <div
-              className="mdc-card"
-              style={
-                Object {
-                  "width": "15rem",
-                }
-              }
+              className="clip"
             >
               <div
-                className="mdc-card__primary-action"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchStart={[Function]}
-                style={Object {}}
-              >
-                <section
-                  className="mdc-card__media"
-                  style={
-                    Object {
-                      "backgroundImage": "url(/images/asche.jpg)",
-                    }
+                className="mdc-card"
+                style={
+                  Object {
+                    "width": "20rem",
                   }
+                }
+              >
+                <div
+                  className="mdc-card__primary-action"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
                 >
-                  <div>
-                    <p
-                      className="name ellipsis"
-                    >
-                      Second part
-                    </p>
-                    <div
-                      className="start ellipsis"
-                    >
-                      Start: 0:11
+                  <section
+                    className="mdc-card__media"
+                    style={
+                      Object {
+                        "backgroundImage": "url(/images/asche.jpg)",
+                      }
+                    }
+                  >
+                    <div>
+                      <p
+                        className="name ellipsis"
+                      >
+                        Second part
+                      </p>
+                      <div
+                        className="start ellipsis"
+                      >
+                        Start: 0:11
+                      </div>
+                      <div
+                        className="end ellipsis"
+                      >
+                        End: 0:20
+                      </div>
                     </div>
-                    <div
-                      className="end ellipsis"
+                  </section>
+                </div>
+                <section
+                  className="mdc-card__actions"
+                >
+                  <div
+                    className="mdc-card__action-icons"
+                  >
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#1976D2",
+                        }
+                      }
+                      tabIndex="0"
                     >
-                      End: 0:20
-                    </div>
+                      edit
+                    </button>
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#F06292",
+                        }
+                      }
+                      tabIndex="0"
+                    >
+                      remove
+                    </button>
                   </div>
                 </section>
               </div>
             </div>
-          </div>
-          <div
-            className="clip"
-          >
             <div
-              className="mdc-card"
-              style={
-                Object {
-                  "width": "15rem",
-                }
-              }
+              className="clip"
             >
               <div
-                className="mdc-card__primary-action"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchStart={[Function]}
-                style={Object {}}
-              >
-                <section
-                  className="mdc-card__media"
-                  style={
-                    Object {
-                      "backgroundImage": "url(/images/asche.jpg)",
-                    }
+                className="mdc-card"
+                style={
+                  Object {
+                    "width": "20rem",
                   }
+                }
+              >
+                <div
+                  className="mdc-card__primary-action"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
                 >
-                  <div>
-                    <p
-                      className="name ellipsis"
-                    >
-                      Third part
-                    </p>
-                    <div
-                      className="start ellipsis"
-                    >
-                      Start: 0:21
+                  <section
+                    className="mdc-card__media"
+                    style={
+                      Object {
+                        "backgroundImage": "url(/images/asche.jpg)",
+                      }
+                    }
+                  >
+                    <div>
+                      <p
+                        className="name ellipsis"
+                      >
+                        Third part
+                      </p>
+                      <div
+                        className="start ellipsis"
+                      >
+                        Start: 0:21
+                      </div>
+                      <div
+                        className="end ellipsis"
+                      >
+                        End: 0:30
+                      </div>
                     </div>
-                    <div
-                      className="end ellipsis"
+                  </section>
+                </div>
+                <section
+                  className="mdc-card__actions"
+                >
+                  <div
+                    className="mdc-card__action-icons"
+                  >
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#1976D2",
+                        }
+                      }
+                      tabIndex="0"
                     >
-                      End: 0:30
-                    </div>
+                      edit
+                    </button>
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#F06292",
+                        }
+                      }
+                      tabIndex="0"
+                    >
+                      remove
+                    </button>
                   </div>
                 </section>
               </div>
             </div>
-          </div>
-          <div
-            className="clip"
-          >
             <div
-              className="mdc-card"
-              style={
-                Object {
-                  "width": "15rem",
-                }
-              }
+              className="clip"
             >
               <div
-                className="mdc-card__primary-action"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchStart={[Function]}
-                style={Object {}}
-              >
-                <section
-                  className="mdc-card__media"
-                  style={
-                    Object {
-                      "backgroundImage": "url(/images/asche.jpg)",
-                    }
+                className="mdc-card"
+                style={
+                  Object {
+                    "width": "20rem",
                   }
+                }
+              >
+                <div
+                  className="mdc-card__primary-action"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={Object {}}
                 >
-                  <div>
-                    <p
-                      className="name ellipsis"
-                    >
-                      Forth part
-                    </p>
-                    <div
-                      className="start ellipsis"
-                    >
-                      Start: 0:31
+                  <section
+                    className="mdc-card__media"
+                    style={
+                      Object {
+                        "backgroundImage": "url(/images/asche.jpg)",
+                      }
+                    }
+                  >
+                    <div>
+                      <p
+                        className="name ellipsis"
+                      >
+                        Forth part
+                      </p>
+                      <div
+                        className="start ellipsis"
+                      >
+                        Start: 0:31
+                      </div>
+                      <div
+                        className="end ellipsis"
+                      >
+                        End: 0:40
+                      </div>
                     </div>
-                    <div
-                      className="end ellipsis"
+                  </section>
+                </div>
+                <section
+                  className="mdc-card__actions"
+                >
+                  <div
+                    className="mdc-card__action-icons"
+                  >
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#1976D2",
+                        }
+                      }
+                      tabIndex="0"
                     >
-                      End: 0:40
-                    </div>
+                      edit
+                    </button>
+                    <button
+                      aria-hidden="true"
+                      className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+                      data-mdc-ripple-is-unbounded={true}
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      role="button"
+                      style={
+                        Object {
+                          "color": "#F06292",
+                        }
+                      }
+                      tabIndex="0"
+                    >
+                      remove
+                    </button>
                   </div>
                 </section>
               </div>

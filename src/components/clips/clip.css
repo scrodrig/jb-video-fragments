@@ -1,4 +1,4 @@
-.name{
+.name {
     font-family: "Arial Black";
     color: white;
     text-align: center;
@@ -10,18 +10,22 @@
     overflow: hidden;
 }
 
-.start{
+.start {
     font-family: "Arial";
     color: white;
     text-overflow: 'ellipsis',
 }
 
-.end{
+.end {
     font-family: "Arial";
     color: white;
     text-overflow: 'ellipsis',
 }
 
-.clip{
+.clip {
     padding: 5px;
+}
+
+.add-button {
+    padding-bottom: 25px;
 }
