@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import Content from '../content/Content';
 import Menu from '../menu/Menu';
 import './home.css';
+import Panel from '../panel/Panel';
 
 class Home extends Component {
   render() {
@@ -12,6 +13,7 @@ class Home extends Component {
         <div className="content">
           <Menu />
           <Content />
+          <Panel />
         </div>
       </div>
     );

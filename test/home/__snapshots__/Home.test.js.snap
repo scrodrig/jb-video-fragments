@@ -204,6 +204,11 @@ exports[`renders an home component into the Home as snapshot 1`] = `
     >
       asdasd
     </div>
+    <div
+      className="panel border-panel"
+    >
+      asdas
+    </div>
   </div>
 </div>
 `;

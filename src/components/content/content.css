@@ -1,7 +1,7 @@
 .content {
     display: flex;
     flex: 1;
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
     align-items: center;
     min-height: 800px;
     justify-content: center;
