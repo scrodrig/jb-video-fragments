@@ -63,6 +63,7 @@ exports[`renders an clip component into the Clip as snapshot 1`] = `
           className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
           data-mdc-ripple-is-unbounded={true}
           onBlur={[Function]}
+          onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
