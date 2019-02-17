@@ -81,13 +81,7 @@ exports[`renders an home component into the App as snapshot 1`] = `
       <div
         className="menu"
       >
-        <div
-          style={
-            Object {
-              "flex": 1,
-            }
-          }
-        >
+        <div>
           <aside
             className="mdc-drawer"
           >
@@ -97,12 +91,12 @@ exports[`renders an home component into the App as snapshot 1`] = `
               <div
                 className="mdc-drawer__title"
               >
-                DrawerHeader
+                Anonymous User!!
               </div>
               <div
                 className="mdc-drawer__subtitle"
               >
-                Subtitle
+                Welcome!!
               </div>
             </div>
             <div
@@ -128,7 +122,24 @@ exports[`renders an home component into the App as snapshot 1`] = `
                   style={Object {}}
                   tabIndex={0}
                 >
-                  Cookies
+                  <div
+                    className="item"
+                  >
+                    <i
+                      className="rmwc-icon material-icons"
+                      style={
+                        Object {
+                          "color": "#F06292",
+                          "paddingRight": 10,
+                        }
+                      }
+                    >
+                      favorite
+                    </i>
+                    <h4>
+                      Favorites
+                    </h4>
+                  </div>
                 </div>
                 <div
                   className="mdc-list-item"
@@ -143,7 +154,24 @@ exports[`renders an home component into the App as snapshot 1`] = `
                   style={Object {}}
                   tabIndex={0}
                 >
-                  Pizza
+                  <div
+                    className="item"
+                  >
+                    <i
+                      className="rmwc-icon material-icons"
+                      style={
+                        Object {
+                          "color": "#F06292",
+                          "paddingRight": 10,
+                        }
+                      }
+                    >
+                      search
+                    </i>
+                    <h4>
+                      Search
+                    </h4>
+                  </div>
                 </div>
                 <div
                   className="mdc-list-item"
@@ -158,67 +186,24 @@ exports[`renders an home component into the App as snapshot 1`] = `
                   style={Object {}}
                   tabIndex={0}
                 >
-                  Icecream
-                </div>
-                <div
-                  className="mdc-list-item"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchStart={[Function]}
-                  style={Object {}}
-                  tabIndex={0}
-                >
-                  Icecream
-                </div>
-                <div
-                  className="mdc-list-item"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchStart={[Function]}
-                  style={Object {}}
-                  tabIndex={0}
-                >
-                  Icecream
-                </div>
-                <div
-                  className="mdc-list-item"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchStart={[Function]}
-                  style={Object {}}
-                  tabIndex={0}
-                >
-                  Icecream
-                </div>
-                <div
-                  className="mdc-list-item"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchStart={[Function]}
-                  style={Object {}}
-                  tabIndex={0}
-                >
-                  Icecream
+                  <div
+                    className="item"
+                  >
+                    <i
+                      className="rmwc-icon material-icons"
+                      style={
+                        Object {
+                          "color": "#F06292",
+                          "paddingRight": 10,
+                        }
+                      }
+                    >
+                      lock
+                    </i>
+                    <h4>
+                      Account
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>

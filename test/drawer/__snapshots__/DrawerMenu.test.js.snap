@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an home component into the DrawerMenu as snapshot 1`] = `
+<div>
+  <aside
+    className="mdc-drawer"
+  >
+    <div
+      className="mdc-drawer__header"
+    >
+      <div
+        className="mdc-drawer__title"
+      >
+        Anonymous User!!
+      </div>
+      <div
+        className="mdc-drawer__subtitle"
+      >
+        Welcome!!
+      </div>
+    </div>
+    <div
+      className="mdc-drawer__content"
+    >
+      <div
+        className="mdc-list"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <div
+          className="mdc-list-item"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          style={Object {}}
+          tabIndex={0}
+        >
+          <div
+            className="item"
+          >
+            <i
+              className="rmwc-icon material-icons"
+              style={
+                Object {
+                  "color": "#F06292",
+                  "paddingRight": 10,
+                }
+              }
+            >
+              favorite
+            </i>
+            <h4>
+              Favorites
+            </h4>
+          </div>
+        </div>
+        <div
+          className="mdc-list-item"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          style={Object {}}
+          tabIndex={0}
+        >
+          <div
+            className="item"
+          >
+            <i
+              className="rmwc-icon material-icons"
+              style={
+                Object {
+                  "color": "#F06292",
+                  "paddingRight": 10,
+                }
+              }
+            >
+              search
+            </i>
+            <h4>
+              Search
+            </h4>
+          </div>
+        </div>
+        <div
+          className="mdc-list-item"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          style={Object {}}
+          tabIndex={0}
+        >
+          <div
+            className="item"
+          >
+            <i
+              className="rmwc-icon material-icons"
+              style={
+                Object {
+                  "color": "#F06292",
+                  "paddingRight": 10,
+                }
+              }
+            >
+              lock
+            </i>
+            <h4>
+              Account
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+`;
