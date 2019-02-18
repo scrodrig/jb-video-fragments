@@ -12,6 +12,7 @@ describe('ReactDOM testing', () => {
 });
 
 jest.mock('../../src/components/clips/ClipList', () => 'clipList');
+jest.mock('../../src/components/video/Video', () => 'Video');
 describe('Snapshot Testing', () => {
   it('renders an home component into the App as snapshot', () => {
     const TextInputComponent = renderer.create(<App />).toJSON();

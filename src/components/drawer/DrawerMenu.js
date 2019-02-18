@@ -18,6 +18,7 @@ import './drawerMenu.css';
 import colors from '../../style/colors';
 import I18n from '../../i18n';
 import ShortcutCard from '../shortcuts/ShortcutCard';
+import Marker from '../marker/Marker';
 
 const iconStyle = { color: colors.secondary300, paddingRight: 10 };
 class DrawerMenu extends Component {
@@ -63,8 +64,9 @@ class DrawerMenu extends Component {
           <DrawerContent>
             {DrawerMenu.getList(iconStyle)}
           </DrawerContent>
+          <Marker title={I18n.t('clip.marker')} />
+          <ShortcutCard />
         </Drawer>
-        <ShortcutCard />
       </div>
     );
   }

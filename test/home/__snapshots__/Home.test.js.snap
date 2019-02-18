@@ -196,42 +196,58 @@ exports[`renders an home component into the Home as snapshot 1`] = `
               </div>
             </div>
           </div>
-        </aside>
-        <div>
           <div
-            className="mdc-card"
+            className="Marker"
           >
-            <section
-              className="mdc-card__media"
-              style={
-                Object {
-                  "backgroundColor": "#E91E63",
-                }
-              }
+            <span
+              className="side-container"
             >
-              <div>
-                <p
-                  className="shortcut"
-                >
-                  <span
-                    className="titleVideo mdc-typography--button"
-                  >
-                    Next: ctrl+shift+d
-                  </span>
-                </p>
-                <div
-                  className="shortcut"
-                >
-                  <span
-                    className="titleVideo mdc-typography--button"
-                  >
-                    Previous: ctrl+shift+a
-                  </span>
-                </div>
-              </div>
-            </section>
+              <span
+                className="side-arrow"
+              />
+              <span
+                className="side-marker"
+              >
+                Marker
+              </span>
+            </span>
           </div>
-        </div>
+          <div>
+            <div
+              className="mdc-card"
+            >
+              <section
+                className="mdc-card__media"
+                style={
+                  Object {
+                    "backgroundColor": "#E91E63",
+                  }
+                }
+              >
+                <div>
+                  <p
+                    className="shortcut"
+                  >
+                    <span
+                      className="titleVideo mdc-typography--button"
+                    >
+                      Next: ctrl+shift+d
+                    </span>
+                  </p>
+                  <div
+                    className="shortcut"
+                  >
+                    <span
+                      className="titleVideo mdc-typography--button"
+                    >
+                      Previous: ctrl+shift+a
+                    </span>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
     <div

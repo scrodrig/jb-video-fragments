@@ -17,20 +17,23 @@
 }
 
 #bar{
-    /*height: 150px;*/
-    margin-top: 6px;
-    justify-content: center;
-    align-items: center;
+    margin-top: 50px;
 }
 
-#bar span{
-    border: 1px dotted #37474F;
-    height: 100%;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #C2185B;
-    padding-left: 10px;
-    padding-bottom: 16px;
+.marker{
+    background-color: #E91E63;
+    color: white;
+    font-weight: bold;
+}
+
+.container{
+    display: inline-grid;
     padding-right: 10px;
+    padding-left: 10px;
+}
+
+.arrow{
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 50px solid #E91E63;
 }
