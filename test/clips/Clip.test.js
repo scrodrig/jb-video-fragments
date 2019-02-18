@@ -7,6 +7,7 @@ jest.mock('../../src/components/video/Video', () => 'Video');
 it('renders an clip component into the Clip as snapshot', () => {
   const clip = {
     name: 'cualquier cosa',
+    thumbnail: 'cualquier_cosa.png',
     start: 80,
     end: 90,
   };
