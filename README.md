@@ -42,3 +42,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - [x] The ability to delete clips from the list (excluding the full video item)
 - [x] The ability to edit existing clips in the list
 - [x] The ability to play clips in the video player
+
+
+#### Bonus Listed (Optional)
+
+- [x] Hotkeys to jump between the current clip and next and previous clips (if there are any)
+- [x] The ability to reuse the the player and playlist on another page without the editing
+
+#### Bonus Not Listed (Optional)
+- [x] Use CI/CD Tool to run tests and linter [Badge](https://travis-ci.org/scrodrig/jb-video-fragments)
+- [x] Use analysis tool [Badge](https://codebeat.co/projects/github-com-scrodrig-jb-video-fragments-master)
