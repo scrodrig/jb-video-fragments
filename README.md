@@ -8,26 +8,31 @@ Welcome to an example of Video Fragments Media with ReactJS, in order to make th
 follow this steps
 
 ### Clone project
-#### `$ git clone https://github.com/scrodrig/jb-video-fragments.git`
+`$ git clone https://github.com/scrodrig/jb-video-fragments.git`
 
 ### Install dependencies
-#### `$ npm install`
+`$ npm install`
 
 ### Start the project
-#### `$ npm start`
-
-### Run tests
-#### `$ npm test`
-
-### Run linter ESLint
-#### `$ npm run lint`
+`$ npm start`
 
 After executing RUN command, please go to:
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-### Features checklist 
+## Other commands to check
+
+### Run tests
+`$ npm test`
+
+### Run linter ESLint
+`$ npm run lint`
+
+
+
+
+## Features checklist 
 #### Mandatory
 
 - [x] An HTML5 video player that utilizes media fragments
