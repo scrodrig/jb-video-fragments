@@ -14,7 +14,9 @@ class Video extends Component {
       <div className="videoPlayer">
         <Typography
           use="headline2"
-          className="titleVideo"
+          style={{
+            paddingBottom: '100px',
+          }}
         >
           {I18n.t('clip.title', { clipTitle: playingClip.name })}
         </Typography>

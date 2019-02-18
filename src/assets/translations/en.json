@@ -14,7 +14,7 @@
     "start": "Start",
     "end": "End",
     "next": "Next: ctrl+shift+d",
-    "previous": "Next: ctrl+shift+a"
+    "previous": "Previous: ctrl+shift+a"
   },
   "edit":{
     "clip":{
