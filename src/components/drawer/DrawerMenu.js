@@ -17,6 +17,7 @@ import '@rmwc/icon/icon.css';
 import './drawerMenu.css';
 import colors from '../../style/colors';
 import I18n from '../../i18n';
+import ShortcutCard from '../shortcuts/ShortcutCard';
 
 const iconStyle = { color: colors.secondary300, paddingRight: 10 };
 class DrawerMenu extends Component {
@@ -63,6 +64,7 @@ class DrawerMenu extends Component {
             {DrawerMenu.getList(iconStyle)}
           </DrawerContent>
         </Drawer>
+        <ShortcutCard />
       </div>
     );
   }

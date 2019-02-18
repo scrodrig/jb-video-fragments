@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign */
 import React, { Component } from 'react';
+import { sample } from 'lodash';
 import {
   Card,
   CardPrimaryAction,
@@ -8,7 +9,6 @@ import {
   CardActionIcons,
   CardActionIcon,
 } from '@rmwc/card';
-import { sample } from 'lodash';
 import './clip.css';
 import '@material/card/dist/mdc.card.css';
 import '@material/button/dist/mdc.button.css';

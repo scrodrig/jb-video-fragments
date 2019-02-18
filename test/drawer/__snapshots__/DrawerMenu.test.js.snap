@@ -128,5 +128,46 @@ exports[`renders an home component into the DrawerMenu as snapshot 1`] = `
       </div>
     </div>
   </aside>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#E91E63",
+      }
+    }
+  >
+    <div
+      className="mdc-card"
+    >
+      <section
+        className="mdc-card__media"
+        style={
+          Object {
+            "backgroundColor": "#E91E63",
+          }
+        }
+      >
+        <div>
+          <p
+            className="shortcut"
+          >
+            <span
+              className="titleVideo mdc-typography--button"
+            >
+              Next: ctrl+shift+d
+            </span>
+          </p>
+          <div
+            className="shortcut"
+          >
+            <span
+              className="titleVideo mdc-typography--button"
+            >
+              Next: ctrl+shift+d
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </div>
 `;

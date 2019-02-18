@@ -4,6 +4,16 @@ exports[`renders an home component into the Content as snapshot 1`] = `
 <div
   className="content"
 >
-  <Video />
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flex": 1,
+        "flexDirection": "column",
+      }
+    }
+  >
+    <Video />
+  </div>
 </div>
 `;

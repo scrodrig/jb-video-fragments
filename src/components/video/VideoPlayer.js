@@ -6,7 +6,9 @@ class VideoPlayer extends Component {
   render() {
     return (
       <div className="content">
-        <Video />
+        <div style={{ display: 'flex', flex: 1, flexDirection: 'column' }}>
+          <Video />
+        </div>
       </div>
     );
   }

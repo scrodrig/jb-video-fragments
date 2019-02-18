@@ -2,7 +2,6 @@
     display: flex;
     flex: 1;
     align-items: flex-start;
-    min-height: 800px;
     justify-content: center;
 }
 

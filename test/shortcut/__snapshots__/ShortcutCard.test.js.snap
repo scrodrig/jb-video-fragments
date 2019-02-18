@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an card component into the ShortcutCard as snapshot 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#E91E63",
+    }
+  }
+>
+  <div
+    className="mdc-card"
+  >
+    <section
+      className="mdc-card__media"
+      style={
+        Object {
+          "backgroundColor": "#E91E63",
+        }
+      }
+    >
+      <div>
+        <p
+          className="shortcut"
+        >
+          <span
+            className="titleVideo mdc-typography--button"
+          >
+            Next: ctrl+shift+d
+          </span>
+        </p>
+        <div
+          className="shortcut"
+        >
+          <span
+            className="titleVideo mdc-typography--button"
+          >
+            Next: ctrl+shift+d
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

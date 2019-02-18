@@ -8,10 +8,13 @@
     "account": "Account"
   },
   "clip": {
+    "title": "You are watching: {{clipTitle}}",
     "name": "Name",
     "add": "Add",
     "start": "Start",
-    "end": "End"
+    "end": "End",
+    "next": "Next: ctrl+shift+d",
+    "previous": "Next: ctrl+shift+a"
   },
   "edit":{
     "clip":{

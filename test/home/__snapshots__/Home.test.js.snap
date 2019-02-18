@@ -197,12 +197,63 @@ exports[`renders an home component into the Home as snapshot 1`] = `
             </div>
           </div>
         </aside>
+        <div
+          style={
+            Object {
+              "backgroundColor": "#E91E63",
+            }
+          }
+        >
+          <div
+            className="mdc-card"
+          >
+            <section
+              className="mdc-card__media"
+              style={
+                Object {
+                  "backgroundColor": "#E91E63",
+                }
+              }
+            >
+              <div>
+                <p
+                  className="shortcut"
+                >
+                  <span
+                    className="titleVideo mdc-typography--button"
+                  >
+                    Next: ctrl+shift+d
+                  </span>
+                </p>
+                <div
+                  className="shortcut"
+                >
+                  <span
+                    className="titleVideo mdc-typography--button"
+                  >
+                    Next: ctrl+shift+d
+                  </span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </div>
     <div
       className="content"
     >
-      <Video />
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "column",
+          }
+        }
+      >
+        <Video />
+      </div>
     </div>
     <div
       className="panel border-panel"
