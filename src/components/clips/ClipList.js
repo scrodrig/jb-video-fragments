@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button, ButtonIcon } from '@rmwc/button';
-
+import Mousetrap from 'mousetrap';
 import withContext from '../../context/WithContext';
 import Clip from './Clip';
 import '@material/button/dist/mdc.button.css';
@@ -16,6 +16,20 @@ const emptyClip = {
 };
 
 class ClipList extends Component {
+  componentDidMount() {
+    const { context } = this.props;
+    const { nextClip, previousClip } = context;
+    Mousetrap.bind('ctrl+shift+d', nextClip);
+    Mousetrap.bind('ctrl+shift+a', previousClip);
+  }
+
+  componentWillUnmount() {
+    const { context } = this.props;
+    const { nextClip, previousClip } = context;
+    Mousetrap.unbind('ctrl+shift+d', nextClip);
+    Mousetrap.unbind('ctrl+shift+a', previousClip);
+  }
+
   renderVideoClips() {
     const { context } = this.props;
     const {

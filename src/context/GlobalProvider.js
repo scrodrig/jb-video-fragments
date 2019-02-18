@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
 import {
-  size, cloneDeep, head, remove,
+  size, cloneDeep, head, remove, findIndex, isNull, isEmpty,
 } from 'lodash';
 import PropTypes from 'prop-types';
 import MyContext from './MyContext';
@@ -46,10 +46,30 @@ class GlobalProvider extends Component {
         },
       ],
       updateClip: clip => this.updateClip(clip),
+      nextClip: () => this.nextClip(),
+      previousClip: () => this.previousClip(),
       updateEditingClip: clip => this.updateEditingClip(clip),
       deleteEditingClip: clip => this.deleteEditingClip(clip),
       addClip: clip => this.addClip(clip),
     };
+  }
+
+  nextClip() {
+    const { clips, playingClip } = this.state;
+    const nextClipPosition = findIndex(clips, clip => playingClip.id === clip.id) + 1;
+    const nextClip = clips[nextClipPosition];
+    if (!isNull(nextClip) && !isEmpty(nextClip)) {
+      this.updateClip(nextClip);
+    }
+  }
+
+  previousClip() {
+    const { clips, playingClip } = this.state;
+    const previousClipPosition = findIndex(clips, clip => playingClip.id === clip.id) - 1;
+    const nextClip = clips[previousClipPosition];
+    if (!isNull(nextClip) && !isEmpty(nextClip)) {
+      this.updateClip(nextClip);
+    }
   }
 
   addClip(editingClip) {
