@@ -208,13 +208,7 @@ exports[`Snapshot Testing renders an home component into the App as snapshot 1`]
               </div>
             </div>
           </aside>
-          <div
-            style={
-              Object {
-                "backgroundColor": "#E91E63",
-              }
-            }
-          >
+          <div>
             <div
               className="mdc-card"
             >
@@ -242,7 +236,7 @@ exports[`Snapshot Testing renders an home component into the App as snapshot 1`]
                     <span
                       className="titleVideo mdc-typography--button"
                     >
-                      Next: ctrl+shift+d
+                      Previous: ctrl+shift+a
                     </span>
                   </div>
                 </div>
@@ -267,7 +261,12 @@ exports[`Snapshot Testing renders an home component into the App as snapshot 1`]
             className="videoPlayer"
           >
             <span
-              className="titleVideo mdc-typography--headline2"
+              className="mdc-typography--headline2"
+              style={
+                Object {
+                  "paddingBottom": "100px",
+                }
+              }
             >
               You are watching: Full Video
             </span>

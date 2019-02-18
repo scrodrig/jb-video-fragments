@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders an card component into the ShortcutCard as snapshot 1`] = `
-<div
-  style={
-    Object {
-      "backgroundColor": "#E91E63",
-    }
-  }
->
+<div>
   <div
     className="mdc-card"
   >
@@ -35,7 +29,7 @@ exports[`renders an card component into the ShortcutCard as snapshot 1`] = `
           <span
             className="titleVideo mdc-typography--button"
           >
-            Next: ctrl+shift+d
+            Previous: ctrl+shift+a
           </span>
         </div>
       </div>
