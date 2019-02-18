@@ -15,3 +15,22 @@
     color: #455A64;
     padding-bottom: 40px;
 }
+
+#bar{
+    /*height: 150px;*/
+    margin-top: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar span{
+    border: 1px dotted #37474F;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #C2185B;
+    padding-left: 10px;
+    padding-bottom: 16px;
+    padding-right: 10px;
+}
