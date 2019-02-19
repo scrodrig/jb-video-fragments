@@ -48,7 +48,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 - [x] Hotkeys to jump between the current clip and next and previous clips (if there are any)
 - [x] Markers on the video player (full video only)
-- [ ] Markers on the video player timeline that denote where a clip starts (full video only)
+- [x] Markers on the video player timeline that denote where a clip starts (full video only)
 - [x] Clicking the marker chooses that clip and plays it from that point
 - [x] The ability to reuse the the player and playlist on another page without the editing
 
