@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import { Icon } from '@rmwc/icon';
 import {
-  Drawer,
-  DrawerHeader,
-  DrawerContent,
-  DrawerTitle,
-  DrawerSubtitle,
+  Drawer, DrawerContent, DrawerHeader, DrawerSubtitle, DrawerTitle,
 } from '@rmwc/drawer';
-import {
-  List,
-  ListItem,
-} from '@rmwc/list';
+import { List, ListItem } from '@rmwc/list';
 
 import '@material/drawer/dist/mdc.drawer.css';
 import '@rmwc/icon/icon.css';
@@ -18,7 +11,6 @@ import './drawerMenu.css';
 import colors from '../../style/colors';
 import I18n from '../../i18n';
 import ShortcutCard from '../shortcuts/ShortcutCard';
-import Marker from '../marker/Marker';
 
 const iconStyle = { color: colors.secondary300, paddingRight: 10 };
 class DrawerMenu extends Component {
@@ -64,7 +56,6 @@ class DrawerMenu extends Component {
           <DrawerContent>
             {DrawerMenu.getList(iconStyle)}
           </DrawerContent>
-          <Marker title={I18n.t('clip.marker')} />
           <ShortcutCard />
         </Drawer>
       </div>

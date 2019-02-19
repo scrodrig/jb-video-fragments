@@ -196,22 +196,6 @@ exports[`renders an home component into the Home as snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            className="Marker"
-          >
-            <span
-              className="side-container"
-            >
-              <span
-                className="side-arrow"
-              />
-              <span
-                className="side-marker"
-              >
-                Marker
-              </span>
-            </span>
-          </div>
           <div>
             <div
               className="mdc-card"

@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { isEmpty } from 'lodash';
@@ -7,6 +8,7 @@ import withContext from '../../context/WithContext';
 import '@material/typography/dist/mdc.typography.css';
 import './videoPlayer.css';
 import I18n from '../../i18n';
+import colors from '../../style/colors';
 
 class Video extends Component {
   componentDidMount() {
@@ -52,12 +54,11 @@ class Video extends Component {
     const spanContainer = document.createElement('span');
     spanContainer.innerHTML = cues[i].text;
     spanContainer.setAttribute('class', 'container1');
-    const timeWidth = (cues[i].endTime - cues[i].startTime) * video.width / 52;
-    const lostWidth = (2.1 * video.width / 52) / 7;
-    spanContainer.setAttribute('style', `width: ${timeWidth + lostWidth}px`);
+    const duration = 52;
+    const timeWidth = (cues[i].endTime - cues[i].startTime) * video.width / duration;
+    spanContainer.setAttribute('style', `width: ${timeWidth}px`);
     spanContainer.setAttribute('data-start', cues[i].startTime);
     spanContainer.addEventListener('click', this.seek);
-    video.addEventListener('play', this.play, false);
     video.addEventListener('timeupdate', this.update, false);
     return spanContainer;
   }
@@ -71,7 +72,7 @@ class Video extends Component {
     const controlBar = document.getElementById('bar1');
     const video = document.getElementById('videoC');
     const progress = video.currentTime / video.duration * 100;
-    controlBar.style.background = `linear-gradient(to right, #500 ${progress}%, #000 ${progress}%)`;
+    controlBar.style.background = `linear-gradient(to right, #E91E63 ${progress}%, #000 ${progress}%)`;
   }
 
   seek() {
@@ -87,20 +88,15 @@ class Video extends Component {
     const { playingClip } = context;
     return (
       <div className="videoPlayer">
-        <Typography
-          use="headline2"
-          style={{
-            paddingBottom: '50px',
-          }}
-        >
+        <Typography use="headline2" style={{ color: colors.primary800 }}>
           {I18n.t('clip.title', { clipTitle: playingClip.name })}
         </Typography>
         <video
           id="videoC"
           src={`/videos/video.mp4#t=${playingClip.start},${playingClip.end}`}
           controls
-          style={{ width: 900 }}
-          width="900"
+          style={{ paddingTop: '50px' }}
+          width="1000"
         >
           <track
             id="trackC"

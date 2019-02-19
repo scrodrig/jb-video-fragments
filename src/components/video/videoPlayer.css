@@ -30,18 +30,20 @@
     display: inline-grid;
     padding-right: 10px;
     padding-left: 10px;
+
 }
 
 .container1 {
     cursor: pointer;
     color: #CCC;
-    margin-top: 20px;
-    /*height: 80px;*/
-    /*width: 180px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #282c34;
+    /*background-color: #E91E63;*/
+    vertical-align: center;
 }
 
 #bar1 {
-    margin-top: 30px;
     background: #000;
     display: inline-flex;
 }
