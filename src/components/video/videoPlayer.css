@@ -6,8 +6,8 @@
 }
 
 .videoPlayer {
-    display: flex;
-    flex: 0.95;
+    /*display: flex;*/
+    /*flex: 0.9;*/
     flex-direction: column;
 }
 
@@ -30,6 +30,20 @@
     display: inline-grid;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.container1 {
+    cursor: pointer;
+    color: #CCC;
+    margin-top: 20px;
+    /*height: 80px;*/
+    /*width: 180px;*/
+}
+
+#bar1 {
+    margin-top: 30px;
+    background: #000;
+    display: inline-flex;
 }
 
 .arrow{

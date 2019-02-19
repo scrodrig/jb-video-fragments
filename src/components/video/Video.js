@@ -21,6 +21,8 @@ class Video extends Component {
   }
 
   componentDidUpdate() {
+    const video = document.getElementById('videoC');
+    video.removeEventListener('timeupdate', this.update, false);
     const { context } = this.props;
     const { playingClip } = context;
     if (playingClip.type === 'full') {
@@ -38,7 +40,7 @@ class Video extends Component {
   addMarkers() {
     const video = document.getElementById('videoC');
     const { cues } = video.textTracks[0];
-    const controlBar = document.getElementById('bar');
+    const controlBar = document.getElementById('bar1');
     for (let index = 0; index < cues.length; index += 1) {
       const spanContainer = this.createMarker(cues, index);
       controlBar.appendChild(spanContainer);
@@ -46,14 +48,30 @@ class Video extends Component {
   }
 
   createMarker(cues, i) {
+    const video = document.getElementById('videoC');
     const spanContainer = document.createElement('span');
-    spanContainer.innerHTML = `<span class="arrow"></span>
-                                <span class="marker">${cues[i].text}</span>`;
-    // spanContainer.innerText = `${<Marker title={cues[i].text} />}`;
-    spanContainer.setAttribute('class', 'container');
+    spanContainer.innerHTML = cues[i].text;
+    spanContainer.setAttribute('class', 'container1');
+    const timeWidth = (cues[i].endTime - cues[i].startTime) * video.width / 52;
+    const lostWidth = (2.1 * video.width / 52) / 7;
+    spanContainer.setAttribute('style', `width: ${timeWidth + lostWidth}px`);
     spanContainer.setAttribute('data-start', cues[i].startTime);
     spanContainer.addEventListener('click', this.seek);
+    video.addEventListener('play', this.play, false);
+    video.addEventListener('timeupdate', this.update, false);
     return spanContainer;
+  }
+
+  play() {
+    const video = document.getElementById('videoC');
+    if (video.paused) { video.play(); } else { video.pause(); }
+  }
+
+  update() {
+    const controlBar = document.getElementById('bar1');
+    const video = document.getElementById('videoC');
+    const progress = video.currentTime / video.duration * 100;
+    controlBar.style.background = `linear-gradient(to right, #500 ${progress}%, #000 ${progress}%)`;
   }
 
   seek() {
@@ -80,8 +98,9 @@ class Video extends Component {
         <video
           id="videoC"
           src={`/videos/video.mp4#t=${playingClip.start},${playingClip.end}`}
-          // controls
-          autoPlay
+          controls
+          style={{ width: 900 }}
+          width="900"
         >
           <track
             id="trackC"
@@ -95,7 +114,7 @@ class Video extends Component {
             default
           />
         </video>
-        {playingClip.type === 'full' ? <div id="bar" /> : null}
+        {playingClip.type === 'full' ? <span id="bar1" /> : null}
       </div>
     );
   }
