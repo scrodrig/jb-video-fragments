@@ -33,7 +33,7 @@ class Video extends Component {
   }
 
   drawMarkers() {
-    const span = document.getElementsByClassName('marker');
+    const span = document.getElementsByClassName('container1');
     if (isEmpty(span)) {
       this.addMarkers();
     }
