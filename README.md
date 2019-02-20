@@ -47,6 +47,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 #### Bonus Listed (Optional)
 
 - [x] Hotkeys to jump between the current clip and next and previous clips (if there are any)
+- [x] The ability to add arbitrary ‘tags’ to clips so that they can be filtered by the tag name
 - [x] Markers on the video player (full video only)
 - [x] Markers on the video player timeline that denote where a clip starts (full video only)
 - [x] Clicking the marker chooses that clip and plays it from that point
