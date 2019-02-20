@@ -1,0 +1,42 @@
+{
+  "header": "Video Fragments Tube",
+  "drawer": {
+    "header": "Usuario anónimo!!",
+    "subtitle": "Bienvenido!!",
+    "favorites": "Favoritos",
+    "search": "Busqueda",
+    "account": "Mi Cuenta"
+  },
+  "clip": {
+    "marker": "Marcador",
+    "title": "Usted esta viendo: {{clipTitle}}",
+    "name": "Nombre",
+    "add": "Añadir",
+    "start": "Inicio",
+    "end": "Final",
+    "next": "Siguiente: ctrl+shift+d",
+    "previous": "Anterior: ctrl+shift+a",
+    "search": "Filtrar por etiqueta",
+    "tags":{
+      "add": "Añade una etiqueta",
+      "type": "Type a tag"
+    }
+  },
+  "edit":{
+    "clip":{
+      "title":"Create a clip",
+      "deleteTitle":"Delete a clip",
+      "name":"Clip name",
+      "nameHelp":"Type the name of the clip",
+      "start":"Clip start time",
+      "startHelp":"Type the start of the clip",
+      "end":"Clip end time",
+      "endHelp":"Type the end of the clip",
+      "save":"Save",
+      "confirm":"Confirm",
+      "cancel":"Cancel",
+      "confirmationDelete":"Are you sure you want to delete {{clipTitle}} clip?"
+    }
+  }
+
+}
