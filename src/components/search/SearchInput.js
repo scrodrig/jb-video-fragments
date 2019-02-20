@@ -7,6 +7,7 @@ import '@material/notched-outline/dist/mdc.notched-outline.css';
 import '@material/line-ripple/dist/mdc.line-ripple.css';
 import PropTypes from 'prop-types';
 import withContext from '../../context/WithContext';
+import I18n from '../../i18n';
 
 class SearchInput extends Component {
   render() {
@@ -17,7 +18,7 @@ class SearchInput extends Component {
     return (
       <div className="SearchInput">
         <TextField
-          label="trailingIcon..."
+          label={I18n.t('clip.search')}
           value={filteredClip}
           onChange={(event) => {
             onChangeFilteredClip(event);

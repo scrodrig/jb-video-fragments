@@ -75,6 +75,30 @@ exports[`renders an clip component into the Clip as snapshot 1`] = `
           role="button"
           style={
             Object {
+              "color": "#4CAF50",
+            }
+          }
+          tabIndex="0"
+        >
+          tag
+        </button>
+        <button
+          aria-hidden="true"
+          className="rmwc-icon material-icons mdc-card__action mdc-card__action--icon mdc-card__action mdc-card__action--icon mdc-icon-button"
+          data-mdc-ripple-is-unbounded={true}
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          style={
+            Object {
               "color": "#1976D2",
             }
           }

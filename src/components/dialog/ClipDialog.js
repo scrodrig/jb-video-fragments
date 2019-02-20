@@ -26,7 +26,6 @@ class ClipDialog extends Component {
     const { context } = this.props;
     const { editingClip } = context;
     this.state = cloneDeep(editingClip);
-    // console.warn('editingClip', this.state);
   }
 
   onChange(event) {
@@ -50,6 +49,7 @@ class ClipDialog extends Component {
             addClip({
               id,
               name,
+              tags: editingClip.tags,
               thumbnail: editingClip.thumbnail,
               start,
               end,

@@ -15,7 +15,12 @@
     "start": "Start",
     "end": "End",
     "next": "Next: ctrl+shift+d",
-    "previous": "Previous: ctrl+shift+a"
+    "previous": "Previous: ctrl+shift+a",
+    "search": "Filter a clip",
+    "tags":{
+      "add": "Add a tag",
+      "type": "Type a tag"
+    }
   },
   "edit":{
     "clip":{

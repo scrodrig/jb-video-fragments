@@ -9,6 +9,7 @@ import '@material/typography/dist/mdc.typography.css';
 import './videoPlayer.css';
 import I18n from '../../i18n';
 import colors from '../../style/colors';
+import Tags from '../tag/Tags';
 
 class Video extends Component {
   componentDidMount() {
@@ -111,6 +112,10 @@ class Video extends Component {
           />
         </video>
         {playingClip.type === 'full' ? <span id="bar1" /> : null}
+        {playingClip.type !== 'full'
+          ? (
+            <Tags tags={playingClip.tags} />
+          ) : null}
       </div>
     );
   }

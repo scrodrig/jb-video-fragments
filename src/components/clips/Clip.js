@@ -32,6 +32,7 @@ class Clip extends Component {
       onClick,
       onEdit,
       onDelete,
+      onTagging,
     } = this.props;
     const { openModal } = this.state;
     return (
@@ -58,6 +59,18 @@ class Clip extends Component {
           </CardPrimaryAction>
           <CardActions>
             <CardActionIcons>
+              <CardActionIcon
+                icon="tag"
+                style={{
+                  color: clip.type === 'full'
+                    ? colors.primary100
+                    : colors.green500,
+                }}
+                onClick={() => {
+                  onTagging(clip);
+                }}
+                disabled={clip.type === 'full'}
+              />
               <CardActionIcon
                 icon="edit"
                 style={{
@@ -111,6 +124,7 @@ Clip.propTypes = {
   onClick: PropTypes.func,
   onEdit: PropTypes.func,
   onDelete: PropTypes.func,
+  onTagging: PropTypes.func,
 };
 
 Clip.defaultProps = {
@@ -120,6 +134,8 @@ Clip.defaultProps = {
   onEdit: () => {
   },
   onDelete: () => {
+  },
+  onTagging: () => {
   },
 };
 

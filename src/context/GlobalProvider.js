@@ -41,15 +41,16 @@ class GlobalProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: 'Hello',
       filteredClip: '',
       playingClip: fullVideoClip,
       editingClip: null,
+      taggingClip: null,
       clips: [
         {
           id: 2,
           name: 'First part',
           type: 'fragment',
+          tags: ['First', 'Part'],
           thumbnail: thumbnail1,
           start: 0,
           end: 10,
@@ -58,6 +59,7 @@ class GlobalProvider extends Component {
           id: 3,
           name: 'Second part',
           type: 'fragment',
+          tags: ['Second', 'Part'],
           thumbnail: thumbnail2,
           start: 22,
           end: 35,
@@ -66,6 +68,7 @@ class GlobalProvider extends Component {
           id: 4,
           name: 'Third part',
           type: 'fragment',
+          tags: ['Third'],
           thumbnail: thumbnail3,
           start: 36,
           end: 52,
@@ -74,6 +77,7 @@ class GlobalProvider extends Component {
       updateClip: clip => this.updateClip(clip),
       nextClip: () => this.nextClip(),
       previousClip: () => this.previousClip(),
+      updateTaggingClip: clip => this.updateTaggingClip(clip),
       updateEditingClip: clip => this.updateEditingClip(clip),
       deleteEditingClip: clip => this.deleteEditingClip(clip),
       addClip: clip => this.addClip(clip),
@@ -93,7 +97,7 @@ class GlobalProvider extends Component {
       return union([fullVideoClip], clips);
     }
     const filteredClips = filter(clips,
-      clip => includes(lowerCase(clip.name), lowerCase(filteredClip)));
+      clip => includes(lowerCase(clip.tags), lowerCase(filteredClip)));
     return union([fullVideoClip], filteredClips);
   }
 
@@ -102,7 +106,8 @@ class GlobalProvider extends Component {
   }
 
   nextClip() {
-    const { clips, playingClip } = this.state;
+    const { playingClip } = this.state;
+    const clips = this.getClips();
     const nextClipPosition = findIndex(clips, clip => playingClip.id === clip.id) + 1;
     const nextClip = clips[nextClipPosition];
     if (!isNull(nextClip) && !isEmpty(nextClip)) {
@@ -111,7 +116,8 @@ class GlobalProvider extends Component {
   }
 
   previousClip() {
-    const { clips, playingClip } = this.state;
+    const { playingClip } = this.state;
+    const clips = this.getClips();
     const previousClipPosition = findIndex(clips, clip => playingClip.id === clip.id) - 1;
     const nextClip = clips[previousClipPosition];
     if (!isNull(nextClip) && !isEmpty(nextClip)) {
@@ -145,8 +151,9 @@ class GlobalProvider extends Component {
 
   addClipQueue(clips, editingClip) {
     const clip = cloneDeep(editingClip);
-    clip.id = size(clips) + 1;
+    clip.id = size(clips) + (new Date()).getTime();
     clip.type = 'fragment';
+    clip.tags = [];
     clip.thumbnail = GlobalProvider.assignThumbnail();
     clips.push(clip);
     this.setState({ clips }, () => {
@@ -156,6 +163,11 @@ class GlobalProvider extends Component {
 
   updateEditingClip(editingClip) {
     this.setState({ editingClip }, () => {
+    });
+  }
+
+  updateTaggingClip(taggingClip) {
+    this.setState({ taggingClip }, () => {
     });
   }
 

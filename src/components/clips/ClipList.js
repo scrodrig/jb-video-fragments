@@ -7,6 +7,7 @@ import Clip from './Clip';
 import '@material/button/dist/mdc.button.css';
 import I18n from '../../i18n';
 import ClipDialog from '../dialog/ClipDialog';
+import TagDialog from '../dialog/TagDialog';
 
 const emptyClip = {
   id: 0,
@@ -33,7 +34,7 @@ class ClipList extends Component {
   renderVideoClips() {
     const { context } = this.props;
     const {
-      getClips, updateClip, updateEditingClip, deleteEditingClip,
+      getClips, updateClip, updateEditingClip, deleteEditingClip, updateTaggingClip,
     } = context;
     const clips = getClips();
     return (
@@ -45,6 +46,7 @@ class ClipList extends Component {
             onClick={updateClip}
             onEdit={updateEditingClip}
             onDelete={deleteEditingClip}
+            onTagging={updateTaggingClip}
           />
         ))}
       </div>
@@ -54,7 +56,7 @@ class ClipList extends Component {
   render() {
     const { context } = this.props;
     const {
-      editingClip, updateEditingClip,
+      editingClip, updateEditingClip, taggingClip,
     } = context;
     return (
       <div>
@@ -73,6 +75,7 @@ class ClipList extends Component {
         </div>
         {this.renderVideoClips()}
         {editingClip !== null ? <ClipDialog /> : null}
+        {taggingClip !== null ? <TagDialog /> : null}
       </div>
     );
   }

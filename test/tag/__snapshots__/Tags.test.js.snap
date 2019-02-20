@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an component into the Tags as snapshot 1`] = `
+<div
+  className="Tag"
+>
+  <div
+    className="group-chips"
+  >
+    <div
+      className="mdc-chip-set"
+    />
+  </div>
+</div>
+`;

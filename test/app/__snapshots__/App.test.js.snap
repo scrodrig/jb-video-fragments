@@ -166,10 +166,10 @@ exports[`Snapshot Testing renders an home component into the App as snapshot 1`]
                         }
                       }
                     >
-                      search
+                      lock
                     </i>
                     <h4>
-                      Search
+                      Account
                     </h4>
                   </div>
                 </div>
@@ -198,10 +198,10 @@ exports[`Snapshot Testing renders an home component into the App as snapshot 1`]
                         }
                       }
                     >
-                      lock
+                      search
                     </i>
                     <h4>
-                      Account
+                      Search
                     </h4>
                   </div>
                 </div>

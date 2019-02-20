@@ -48,6 +48,11 @@
     display: inline-flex;
 }
 
+.group-chips {
+    display: flex;
+    justify-content: center;
+}
+
 .arrow{
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;

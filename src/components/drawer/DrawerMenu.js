@@ -29,8 +29,8 @@ class DrawerMenu extends Component {
     return (
       <List>
         {DrawerMenu.getListItem('favorite', I18n.t('drawer.favorites'))}
-        {DrawerMenu.getListItem('search', I18n.t('drawer.search'))}
         {DrawerMenu.getListItem('lock', I18n.t('drawer.account'))}
+        {DrawerMenu.getListItem('search', I18n.t('drawer.search'))}
       </List>
     );
   }
