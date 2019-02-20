@@ -51,8 +51,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - [x] Markers on the video player (full video only)
 - [x] Markers on the video player timeline that denote where a clip starts (full video only)
 - [x] Clicking the marker chooses that clip and plays it from that point
-- [x] The ability to reuse the the player and playlist on another page without the editing
+- [x] The ability to reuse the the player and playlist on another page without the editing capabilities
+- [ ] The ability to automatically jump to the next clip after it finishes, with a 3 second waiting period and appropriate loading animation.
+- [ ] The ability to ‘save’ clips for persistent use.
 
 #### Bonus Not Listed (Optional)
-- [x] Use CI/CD Tool to run tests and linter [Badge](https://travis-ci.org/scrodrig/jb-video-fragments)
+- [x] Use CI/CD Tool to run  tests and linter [Badge](https://travis-ci.org/scrodrig/jb-video-fragments)
 - [x] Use analysis tool [Badge](https://codebeat.co/projects/github-com-scrodrig-jb-video-fragments-master)

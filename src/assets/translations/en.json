@@ -16,7 +16,7 @@
     "end": "End",
     "next": "Next: ctrl+shift+d",
     "previous": "Previous: ctrl+shift+a",
-    "search": "Filter a clip",
+    "search": "Filter a clip by tag",
     "tags":{
       "add": "Add a tag",
       "type": "Type a tag"
