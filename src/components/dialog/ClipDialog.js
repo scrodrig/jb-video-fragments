@@ -50,6 +50,7 @@ class ClipDialog extends Component {
             addClip({
               id,
               name,
+              thumbnail: editingClip.thumbnail,
               start,
               end,
             });

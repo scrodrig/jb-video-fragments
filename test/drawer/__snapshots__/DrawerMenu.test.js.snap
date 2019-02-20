@@ -126,6 +126,7 @@ exports[`renders an home component into the DrawerMenu as snapshot 1`] = `
           </div>
         </div>
       </div>
+      <SearchInput />
     </div>
     <div>
       <div

@@ -4,6 +4,7 @@ import Home from '../../src/components/home/Home';
 
 jest.mock('../../src/components/video/Video', () => 'Video');
 jest.mock('../../src/components/clips/ClipList', () => 'ClipList');
+jest.mock('../../src/components/search/SearchInput', () => 'SearchInput');
 
 it('renders an home component into the Home as snapshot', () => {
   const TextInputComponent = renderer.create(<Home />).toJSON();

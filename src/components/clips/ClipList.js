@@ -33,8 +33,9 @@ class ClipList extends Component {
   renderVideoClips() {
     const { context } = this.props;
     const {
-      clips, updateClip, updateEditingClip, deleteEditingClip,
+      getClips, updateClip, updateEditingClip, deleteEditingClip,
     } = context;
+    const clips = getClips();
     return (
       <div>
         {clips.map((clip, index) => (
@@ -52,7 +53,9 @@ class ClipList extends Component {
 
   render() {
     const { context } = this.props;
-    const { editingClip, updateEditingClip } = context;
+    const {
+      editingClip, updateEditingClip,
+    } = context;
     return (
       <div>
         <div className="add-button">

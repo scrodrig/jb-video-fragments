@@ -195,6 +195,7 @@ exports[`renders an home component into the Home as snapshot 1`] = `
                 </div>
               </div>
             </div>
+            <SearchInput />
           </div>
           <div>
             <div
