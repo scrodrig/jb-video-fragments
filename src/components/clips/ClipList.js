@@ -31,6 +31,24 @@ class ClipList extends Component {
     Mousetrap.unbind('ctrl+shift+a', previousClip);
   }
 
+  getAddButton() {
+    const { context } = this.props;
+    const { updateEditingClip } = context;
+    return (
+      <Button
+        raised
+        onClick={() => {
+          updateEditingClip(emptyClip);
+        }}
+      >
+        <ButtonIcon
+          icon="add"
+        />
+        {I18n.t('clip.add')}
+      </Button>
+    );
+  }
+
   renderVideoClips() {
     const { context } = this.props;
     const {
@@ -55,23 +73,11 @@ class ClipList extends Component {
 
   render() {
     const { context } = this.props;
-    const {
-      editingClip, updateEditingClip, taggingClip,
-    } = context;
+    const { editingClip, taggingClip } = context;
     return (
       <div>
         <div className="add-button">
-          <Button
-            raised
-            onClick={() => {
-              updateEditingClip(emptyClip);
-            }}
-          >
-            <ButtonIcon
-              icon="add"
-            />
-            {I18n.t('clip.add')}
-          </Button>
+          {this.getAddButton()}
         </div>
         {this.renderVideoClips()}
         {editingClip !== null ? <ClipDialog /> : null}

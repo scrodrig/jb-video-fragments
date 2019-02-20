@@ -35,6 +35,17 @@ class TagDialog extends Component {
     this.setState(tags);
   }
 
+  onCloseHandler(evt) {
+    const { context } = this.props;
+    const { tags } = this.state;
+    const { taggingClip, updateTaggingClip, addClip } = context;
+    if (evt.detail.action === 'accept') {
+      taggingClip.tags = tags;
+      addClip(taggingClip);
+    }
+    updateTaggingClip(null);
+  }
+
   getTagField(index) {
     const { tags } = this.state;
     return (
@@ -54,20 +65,11 @@ class TagDialog extends Component {
 
   render() {
     const { context } = this.props;
-    const { tags } = this.state;
-    const {
-      taggingClip, updateTaggingClip, addClip,
-    } = context;
+    const { taggingClip } = context;
     return (
       <Dialog
         open={taggingClip !== null}
-        onClose={(evt) => {
-          if (evt.detail.action === 'accept') {
-            taggingClip.tags = tags;
-            addClip(taggingClip);
-          }
-          updateTaggingClip(null);
-        }}
+        onClose={(evt) => { this.onCloseHandler(evt); }}
       >
         <DialogTitle>{I18n.t('clip.tags.add')}</DialogTitle>
         <DialogContent>
