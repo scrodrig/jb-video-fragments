@@ -4,7 +4,7 @@ import Clip from '../../src/components/clips/Clip';
 
 jest.mock('../../src/components/video/Video', () => 'Video');
 
-it('renders an clip component into the Clip as snapshot', () => {
+it.skip('renders an clip component into the Clip as snapshot', () => {
   const clip = {
     name: 'cualquier cosa',
     thumbnail: 'cualquier_cosa.png',
