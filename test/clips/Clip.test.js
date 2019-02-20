@@ -8,6 +8,7 @@ it('renders an clip component into the Clip as snapshot', () => {
   const clip = {
     name: 'cualquier cosa',
     thumbnail: 'cualquier_cosa.png',
+    tags: [],
     start: 80,
     end: 90,
   };
