@@ -19,7 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --watchAll --silent",
-    "testCI": "jest --ci --silent",
+    "testCI": "jest --ci -u",
     "lint": " ./node_modules/.bin/eslint .",
     "eject": "react-scripts eject"
   },
